@@ -1,7 +1,7 @@
 name,ticker,tz,close,group,query
 ASML,ASML.AS,Europe/Amsterdam,17:30,large cap,"""ASML"""
 HSBC,HSBA.L,Europe/London,16:30,large cap,"""HSBC"""
-Roche,ROG.SW,Europe/Zurich,17:30,large cap,"""Roche"" pharma"
+Roche,RO.SW,Europe/Zurich,17:30,large cap,"""Roche"" pharma"
 Novartis,NOVN.SW,Europe/Zurich,17:30,large cap,"""Novartis"""
 AstraZeneca,AZN.L,Europe/London,16:30,large cap,"""AstraZeneca"""
 Nestle,NESN.SW,Europe/Zurich,17:30,large cap,"""Nestle"""
