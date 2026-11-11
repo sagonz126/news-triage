@@ -34,16 +34,16 @@ The prompt is in `prompts/label_v1.txt`. It is never edited: a change becomes `l
 
 ## Limits, stated up front
 
-- Headlines come from GDELT, which sees most stories minutes to hours after they break. The market often reacts first. This measures how well the model reads news, not a trading strategy.
+- Headlines come from Google News RSS search and Yahoo Finance news, both free. GDELT was the first choice but rate-limits GitHub's servers. Publication times are the source's; the market often reacts before a story is indexed. This measures how well the model reads news, not a trading strategy.
 - Market-adjusted returns assume a beta of one.
-- GDELT matching is noisy (Shell, SAP, ABB are common words); the "relevant" field is there to filter, and its error rate is part of the result.
+- Search matching is noisy (Shell, SAP, ABB are common words, and Google returns lifestyle and option-chart pages too); the "relevant" field is there to filter, and its error rate is part of the result.
 
 ## Layout
 
 ```
-universe.csv              companies, Yahoo tickers, exchange time zones and closes, GDELT queries
+universe.csv              companies, Yahoo tickers, exchange time zones and closes, news search queries
 prompts/label_v1.txt      the labelling prompt
-triage/fetch_news.py      GDELT headlines -> data/headlines/
+triage/fetch_news.py      Google News + Yahoo headlines -> data/headlines/
 triage/label.py           Gemini labels  -> data/labels/
 triage/prices.py          Yahoo Finance closes, abnormal returns -> data/prices/
 triage/score.py           results/results.json and results/scored_days.csv

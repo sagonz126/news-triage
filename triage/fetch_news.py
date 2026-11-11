@@ -1,80 +1,105 @@
-"""Fetch new English headlines for every company from the GDELT DOC 2.0 API.
+"""Fetch new English headlines for every company.
 
-GDELT is a free, open index of world news. We ask for articles seen in the last
-`LOOKBACK_HOURS`, drop anything we already have (same company, same normalised
-title), and append the rest to data/headlines/YYYY-MM.jsonl.
+Two free sources, merged:
+  1. Google News RSS search, one query per company (main source: broad and timely).
+  2. Yahoo Finance news for the ticker (second source: already tagged to the stock).
+
+GDELT was the first choice but rate-limits GitHub's shared servers (HTTP 429 on
+almost every request on 11 Nov 2026), so it was dropped.
+
+We keep anything published in the last LOOKBACK_HOURS that we do not already have
+(same company, same normalised title) and append it to data/headlines/YYYY-MM.jsonl.
 """
-import json
 import sys
 import time
-from datetime import datetime, timezone
+import xml.etree.ElementTree as ET
+from datetime import datetime, timedelta, timezone
+from email.utils import parsedate_to_datetime
 
 import requests
+import yfinance as yf
 
 from .common import HEADLINES, append_jsonl, headline_id, iso, load_universe, normalise_title, now_utc, read_jsonl_dir
 
-API = "https://api.gdeltproject.org/api/v2/doc/doc"
-LOOKBACK_HOURS = 8      # runs every 6 hours, so windows overlap a little
-MAX_RECORDS = 75
-PAUSE_SECONDS = 6       # GDELT asks for at most one request every 5 seconds
+GOOGLE = "https://news.google.com/rss/search"
+LOOKBACK_HOURS = 30     # runs every 6 hours; generous overlap, duplicates are dropped
+PAUSE_SECONDS = 2
+UA = {"User-Agent": "Mozilla/5.0 (news-triage research project; github.com/sagonz126/news-triage)"}
 
 
-def fetch(query):
-    params = {
-        "query": f"{query} sourcelang:english",
-        "mode": "artlist",
-        "format": "json",
-        "maxrecords": MAX_RECORDS,
-        "timespan": f"{LOOKBACK_HOURS}h",
-        "sort": "datedesc",
-    }
-    for attempt in range(3):
-        r = requests.get(API, params=params, timeout=60)
-        if r.status_code == 200:
-            try:
-                return r.json().get("articles", [])
-            except json.JSONDecodeError:
-                # GDELT answers some malformed queries with plain text
-                print(f"  not JSON for {query!r}: {r.text[:120]}", file=sys.stderr)
-                return []
-        time.sleep(PAUSE_SECONDS * (attempt + 2))
-    print(f"  failed {query!r}: HTTP {r.status_code}", file=sys.stderr)
-    return []
+def google_news(query):
+    params = {"q": f"{query} when:2d", "hl": "en-GB", "gl": "GB", "ceid": "GB:en"}
+    r = requests.get(GOOGLE, params=params, headers=UA, timeout=30)
+    r.raise_for_status()
+    out = []
+    for it in ET.fromstring(r.content).findall(".//item"):
+        title = it.findtext("title") or ""
+        source = it.findtext("source") or ""
+        # Google appends " - Source" to every title; strip it
+        if source and title.endswith(f" - {source}"):
+            title = title[: -len(source) - 3]
+        out.append({
+            "title": title.strip(),
+            "source": source,
+            "url": it.findtext("link"),
+            "published": parsedate_to_datetime(it.findtext("pubDate")).astimezone(timezone.utc),
+            "via": "google_news",
+        })
+    return out
+
+
+def yahoo_news(ticker):
+    out = []
+    for a in yf.Ticker(ticker).news or []:
+        c = a.get("content", a)
+        pub = c.get("pubDate")
+        if not pub or not c.get("title"):
+            continue
+        out.append({
+            "title": c["title"].strip(),
+            "source": (c.get("provider") or {}).get("displayName", ""),
+            "url": ((c.get("canonicalUrl") or {}).get("url")) or "",
+            "published": datetime.fromisoformat(pub.replace("Z", "+00:00")),
+            "via": "yahoo",
+        })
+    return out
 
 
 def main():
     seen = {h["id"] for h in read_jsonl_dir(HEADLINES)}
-    fetched_at = iso(now_utc())
-    new_rows, errors = [], 0
+    now = now_utc()
+    cutoff = now - timedelta(hours=LOOKBACK_HOURS)
+    new_rows, failures = [], []
     for co in load_universe():
-        try:
-            arts = fetch(co["query"])
-        except requests.RequestException as e:
-            print(f"  error {co['name']}: {e}", file=sys.stderr)
-            arts, errors = [], errors + 1
-        for a in arts:
-            title = (a.get("title") or "").strip()
-            if len(normalise_title(title)) < 15:
+        items = []
+        for name, fn, arg in (("google", google_news, co["query"]), ("yahoo", yahoo_news, co["ticker"])):
+            try:
+                items += fn(arg)
+            except Exception as e:  # one failing source must not stop the run
+                failures.append(f"{co['name']} ({name}): {repr(e)[:120]}")
+            time.sleep(PAUSE_SECONDS)
+        for a in items:
+            if a["published"] < cutoff or len(normalise_title(a["title"])) < 15:
                 continue
-            hid = headline_id(co["ticker"], title)
+            hid = headline_id(co["ticker"], a["title"])
             if hid in seen:
                 continue
             seen.add(hid)
-            seen_dt = datetime.strptime(a["seendate"], "%Y%m%dT%H%M%SZ").replace(tzinfo=timezone.utc)
             new_rows.append({
                 "id": hid,
                 "company": co["name"],
                 "ticker": co["ticker"],
-                "title": title,
-                "domain": a.get("domain"),
-                "url": a.get("url"),
-                "seen_utc": iso(seen_dt),
-                "fetched_utc": fetched_at,
+                "title": a["title"],
+                "domain": a["source"],
+                "url": a["url"],
+                "via": a["via"],
+                "seen_utc": iso(a["published"]),
+                "fetched_utc": iso(now),
             })
-        time.sleep(PAUSE_SECONDS)
-    month = fetched_at[:7]
-    append_jsonl(HEADLINES, month, new_rows)
-    print(f"{len(new_rows)} new headlines, {errors} companies failed")
+    append_jsonl(HEADLINES, iso(now)[:7], new_rows)
+    print(f"{len(new_rows)} new headlines; {len(failures)} source failures")
+    for f in failures:
+        print("  " + f, file=sys.stderr)
 
 
 if __name__ == "__main__":
