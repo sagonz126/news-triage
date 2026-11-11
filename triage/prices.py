@@ -1,0 +1,46 @@
+"""Daily closes for every company and the STOXX Europe 600, from Yahoo Finance.
+
+Abnormal return = stock return minus the STOXX Europe 600 return on the same day
+(market-adjusted, beta of one). Size is measured in units of the stock's own
+abnormal-return volatility over the previous 60 trading days, so a 2% move counts
+as big for Nestle and as noise for Rolls-Royce.
+"""
+import pandas as pd
+import yfinance as yf
+
+from .common import PRICES, load_universe
+
+MARKET = "^STOXX"
+VOL_WINDOW = 60
+
+
+def main():
+    tickers = [c["ticker"] for c in load_universe()]
+    raw = yf.download(tickers + [MARKET], period="2y", interval="1d", auto_adjust=True,
+                      progress=False, group_by="column", threads=True)
+    close = raw["Close"]
+    PRICES.mkdir(parents=True, exist_ok=True)
+    close.to_csv(PRICES / "close.csv")
+
+    rets = close.pct_change(fill_method=None)
+    mkt = rets[MARKET]
+    rows = []
+    for t in tickers:
+        if t not in rets:
+            continue
+        s = close[t].dropna()
+        r = s.pct_change().dropna()
+        ar = (r - mkt.reindex(r.index)).dropna()
+        sd = ar.rolling(VOL_WINDOW).std().shift(1)   # volatility known before the day
+        fwd = ar[::-1].rolling(5).std()[::-1].shift(-1)  # next five days, for vol_up
+        df = pd.DataFrame({"ticker": t, "ar": ar, "sd": sd, "fwd_sd": fwd})
+        rows.append(df)
+    out = pd.concat(rows).reset_index(names="date")
+    out["date"] = pd.to_datetime(out["date"]).dt.strftime("%Y-%m-%d")
+    out["z"] = out["ar"] / out["sd"]
+    out.to_csv(PRICES / "abnormal.csv", index=False)
+    print(f"abnormal returns: {len(out)} rows, last date {out['date'].max()}")
+
+
+if __name__ == "__main__":
+    main()
