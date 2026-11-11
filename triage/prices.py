@@ -19,6 +19,11 @@ def main():
     raw = yf.download(tickers + [MARKET], period="2y", interval="1d", auto_adjust=True,
                       progress=False, group_by="column", threads=True)
     close = raw["Close"]
+    # Drop today's row until every exchange has closed, so a live price is never used as a close
+    from datetime import datetime, timezone
+    now = datetime.now(timezone.utc)
+    if now.hour < 21:
+        close = close[close.index.strftime("%Y-%m-%d") < now.strftime("%Y-%m-%d")]
     PRICES.mkdir(parents=True, exist_ok=True)
     close.to_csv(PRICES / "close.csv")
 

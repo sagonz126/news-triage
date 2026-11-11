@@ -16,7 +16,7 @@ PROMPT_VERSION = "label_v1"
 PROMPT_FILE = ROOT / "prompts" / f"{PROMPT_VERSION}.txt"
 
 # Labelling started on this date. Nothing before it is scored.
-START_DATE = "2026-11-12"
+START_DATE = "2026-11-11"
 
 
 def now_utc():
