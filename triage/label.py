@@ -15,9 +15,11 @@ from .common import HEADLINES, LABELS, PROMPT_FILE, PROMPT_VERSION, append_jsonl
 
 BASE = "https://generativelanguage.googleapis.com/v1beta"
 # First available model in this list is used, unless GEMINI_MODEL is set.
-PREFERRED = ["gemini-3.8-flash", "gemini-3.6-flash", "gemini-3.5-flash-lite", "gemini-3.1-flash-lite", "gemini-2.5-flash"]
-BATCH = 60
-MAX_BATCHES_PER_RUN = 12
+# Flash-Lite first: fastest, highest free limits, and this is a simple classification task.
+PREFERRED = ["gemini-3.5-flash-lite", "gemini-3.1-flash-lite", "gemini-2.5-flash-lite",
+             "gemini-3.6-flash", "gemini-3.8-flash", "gemini-2.5-flash"]
+BATCH = 25
+TIME_BUDGET_SECONDS = 18 * 60   # stop early; whatever is left waits for the next run
 FIELDS = {"id", "relevant", "reports_price_move", "direction", "size", "vol_up", "confidence", "reason"}
 
 
@@ -47,7 +49,7 @@ def call(model, system, payload):
         "generationConfig": {"responseMimeType": "application/json", "temperature": 0},
     }
     for attempt in range(4):
-        r = requests.post(f"{BASE}/models/{model}:generateContent", headers=headers(), json=body, timeout=180)
+        r = requests.post(f"{BASE}/models/{model}:generateContent", headers=headers(), json=body, timeout=240)
         if r.status_code == 200:
             parts = r.json()["candidates"][0]["content"]["parts"]
             return json.loads("".join(p.get("text", "") for p in parts))
@@ -75,9 +77,13 @@ def main():
     model = pick_model()
     system = PROMPT_FILE.read_text(encoding="utf-8")
     print(f"{len(todo)} headlines to label with {model}")
-    done = 0
-    for i in range(0, min(len(todo), BATCH * MAX_BATCHES_PER_RUN), BATCH):
+    done, started = 0, time.time()
+    for i in range(0, len(todo), BATCH):
+        if time.time() - started > TIME_BUDGET_SECONDS:
+            print(f"time budget reached; {len(todo) - i} headlines left for the next run")
+            break
         chunk = todo[i:i + BATCH]
+        t0 = time.time()
         payload = [{k: h[k] for k in ("id", "company", "title", "domain", "seen_utc")} for h in chunk]
         try:
             out = call(model, system, payload)
@@ -93,7 +99,8 @@ def main():
                              "prompt": PROMPT_VERSION, "labelled_utc": stamp})
         append_jsonl(LABELS, stamp[:7], rows)
         done += len(rows)
-        time.sleep(5)
+        print(f"  batch {i // BATCH}: {len(rows)}/{len(chunk)} labels in {time.time() - t0:.0f}s")
+        time.sleep(4)
     print(f"labelled {done}")
 
 

@@ -15,7 +15,9 @@ concurrency:
 jobs:
   triage:
     runs-on: ubuntu-latest
-    timeout-minutes: 30
+    timeout-minutes: 40
+    env:
+      PYTHONUNBUFFERED: "1"
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
@@ -26,11 +28,13 @@ jobs:
       - name: Fetch headlines
         run: python -m triage.fetch_news
       - name: Label headlines
+        continue-on-error: true
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           GEMINI_MODEL: ${{ vars.GEMINI_MODEL }}
         run: python -m triage.label
       - name: Commit
+        if: always()
         run: |
           git config user.name "news-triage bot"
           git config user.email "actions@users.noreply.github.com"
