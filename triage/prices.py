@@ -11,12 +11,15 @@ import yfinance as yf
 from .common import PRICES, load_universe
 
 MARKET = "^STOXX"
+# Yahoo sometimes publishes the index close a day late; the iShares STOXX Europe 600 ETF
+# (Xetra) fills any day the index is missing, so no stock-day is lost waiting for it.
+MARKET_FALLBACK = "EXSA.DE"
 VOL_WINDOW = 60
 
 
 def main():
     tickers = [c["ticker"] for c in load_universe()]
-    raw = yf.download(tickers + [MARKET], period="2y", interval="1d", auto_adjust=True,
+    raw = yf.download(tickers + [MARKET, MARKET_FALLBACK], period="2y", interval="1d", auto_adjust=True,
                       progress=False, group_by="column", threads=True)
     close = raw["Close"]
     # Drop today's row until every exchange has closed, so a live price is never used as a close
@@ -28,7 +31,10 @@ def main():
     close.to_csv(PRICES / "close.csv")
 
     rets = close.pct_change(fill_method=None)
-    mkt = rets[MARKET]
+    mkt = rets[MARKET].fillna(rets[MARKET_FALLBACK])
+    last = lambda col: close[col].dropna().index.max().strftime("%Y-%m-%d")
+    print(f"last close: index {last(MARKET)}, ETF {last(MARKET_FALLBACK)}, "
+          f"stocks {sorted({last(t) for t in tickers if t in close and close[t].notna().any()})}")
     rows = []
     for t in tickers:
         if t not in rets:

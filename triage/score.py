@@ -19,7 +19,7 @@ from zoneinfo import ZoneInfo
 import pandas as pd
 
 from .baseline import label as keyword_label
-from .common import HEADLINES, LABELS, PRICES, RESULTS, START_DATE, iso, load_universe, now_utc, read_jsonl_dir
+from .common import canonical, HEADLINES, LABELS, PRICES, RESULTS, START_DATE, iso, load_universe, now_utc, read_jsonl_dir
 
 SIZE_RANK = {"noise": 0, "notable": 1, "big": 2}
 
@@ -68,7 +68,7 @@ def metrics(df, pred_dir, pred_size):
 
 def main():
     uni = {c["ticker"]: c for c in load_universe()}
-    heads = {h["id"]: h for h in read_jsonl_dir(HEADLINES)}
+    heads = {h["id"]: {**h, "ticker": canonical(h["ticker"])} for h in read_jsonl_dir(HEADLINES)}
     labels = read_jsonl_dir(LABELS)
     ab = pd.read_csv(PRICES / "abnormal.csv", dtype={"date": str}).dropna(subset=["z"])
     days_by = {t: sorted(g["date"]) for t, g in ab.groupby("ticker")}
@@ -81,7 +81,9 @@ def main():
             continue
         if not lab["relevant"] or lab["reports_price_move"]:
             continue
-        co = uni[h["ticker"]]
+        co = uni.get(h["ticker"])
+        if co is None:
+            continue  # company no longer in the universe
         day, close_utc = reaction_day(h["seen_utc"], days_by.get(h["ticker"], []), co["tz"], co["close"])
         if day is None or (h["ticker"], day) not in ab.index:
             continue  # reaction day not traded yet

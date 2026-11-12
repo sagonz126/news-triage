@@ -33,6 +33,14 @@ jobs:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           GEMINI_MODEL: gemini-3.5-flash-lite   # pinned: changing it starts a new experiment
         run: python -m triage.label
+      # Scoring also runs here: GitHub often starts scheduled jobs hours late,
+      # so the evening score job alone left the page without outcomes.
+      - name: Prices and score
+        if: always()
+        continue-on-error: true
+        run: |
+          python -m triage.prices
+          python -m triage.score
       - name: Update website data
         if: always()
         run: python -m triage.site

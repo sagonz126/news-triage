@@ -9,7 +9,7 @@ from collections import Counter
 
 import pandas as pd
 
-from .common import HEADLINES, LABELS, PRICES, PROMPT_VERSION, RESULTS, START_DATE, iso, load_universe, now_utc, read_jsonl_dir
+from .common import canonical, HEADLINES, LABELS, PRICES, PROMPT_VERSION, RESULTS, START_DATE, iso, load_universe, now_utc, read_jsonl_dir
 from .score import actual_direction, actual_size, reaction_day
 
 FEED_SIZE = 200
@@ -17,7 +17,7 @@ FEED_SIZE = 200
 
 def main():
     uni = {c["ticker"]: c for c in load_universe()}
-    heads = {h["id"]: h for h in read_jsonl_dir(HEADLINES)}
+    heads = {h["id"]: {**h, "ticker": canonical(h["ticker"])} for h in read_jsonl_dir(HEADLINES)}
     labels = [l for l in read_jsonl_dir(LABELS) if l["id"] in heads]
 
     ab, days_by = None, {}

@@ -27,6 +27,14 @@ def iso(dt):
     return dt.astimezone(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
 
 
+# Tickers that changed after headlines were stored under the old one.
+TICKER_ALIASES = {"ROG.SW": "RO.SW"}
+
+
+def canonical(ticker):
+    return TICKER_ALIASES.get(ticker, ticker)
+
+
 def load_universe():
     with open(ROOT / "universe.csv", newline="", encoding="utf-8") as f:
         return list(csv.DictReader(f))
