@@ -1,26 +1,26 @@
 {
-  "updated_utc": "2026-11-12T08:01:04Z",
+  "updated_utc": "2026-11-12T14:12:54Z",
   "start_date": "2026-11-11",
   "all": {
     "llm": {
       "n": 35,
       "size_accuracy": 0.543,
-      "move_precision": 0.316,
-      "move_recall": 0.667,
+      "move_precision": 0.263,
+      "move_recall": 0.714,
       "direction_accuracy_on_moves": 1.0,
-      "direction_n": 6
+      "direction_n": 5
     },
     "keyword_baseline": {
       "n": 35,
-      "size_accuracy": 0.629,
-      "move_precision": 0.333,
-      "move_recall": 0.333,
+      "size_accuracy": 0.657,
+      "move_precision": 0.3,
+      "move_recall": 0.429,
       "direction_accuracy_on_moves": 0.667,
       "direction_n": 3
     },
     "always_no_move": {
       "n": 35,
-      "size_accuracy": 0.743,
+      "size_accuracy": 0.8,
       "move_precision": null,
       "move_recall": 0.0,
       "direction_accuracy_on_moves": null,
@@ -29,30 +29,30 @@
   },
   "pre_close": {
     "llm": {
-      "n": 22,
-      "size_accuracy": 0.591,
-      "move_precision": 0.308,
+      "n": 21,
+      "size_accuracy": 0.524,
+      "move_precision": 0.231,
       "move_recall": 1.0,
       "direction_accuracy_on_moves": 1.0,
-      "direction_n": 4
+      "direction_n": 3
     },
     "keyword_baseline": {
-      "n": 22,
-      "size_accuracy": 0.727,
+      "n": 21,
+      "size_accuracy": 0.762,
       "move_precision": 0.4,
-      "move_recall": 0.5,
+      "move_recall": 0.667,
       "direction_accuracy_on_moves": 0.5,
       "direction_n": 2
     },
     "always_no_move": {
-      "n": 22,
-      "size_accuracy": 0.818,
+      "n": 21,
+      "size_accuracy": 0.857,
       "move_precision": null,
       "move_recall": 0.0,
       "direction_accuracy_on_moves": null,
       "direction_n": 0
     }
   },
-  "headlines_labelled": 1584,
+  "headlines_labelled": 1809,
   "company_days_scored": 35
 }
