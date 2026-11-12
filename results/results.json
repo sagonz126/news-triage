@@ -1,5 +1,58 @@
 {
-  "updated_utc": "2026-11-11T12:29:10Z",
+  "updated_utc": "2026-11-12T07:57:45Z",
   "start_date": "2026-11-11",
-  "note": "No reaction days have closed yet."
+  "all": {
+    "llm": {
+      "n": 7,
+      "size_accuracy": 0.571,
+      "move_precision": 0.333,
+      "move_recall": 0.5,
+      "direction_accuracy_on_moves": 1.0,
+      "direction_n": 1
+    },
+    "keyword_baseline": {
+      "n": 7,
+      "size_accuracy": 0.429,
+      "move_precision": 0.0,
+      "move_recall": 0.0,
+      "direction_accuracy_on_moves": null,
+      "direction_n": 0
+    },
+    "always_no_move": {
+      "n": 7,
+      "size_accuracy": 0.714,
+      "move_precision": null,
+      "move_recall": 0.0,
+      "direction_accuracy_on_moves": null,
+      "direction_n": 0
+    }
+  },
+  "pre_close": {
+    "llm": {
+      "n": 1,
+      "size_accuracy": 0.0,
+      "move_precision": 0.0,
+      "move_recall": null,
+      "direction_accuracy_on_moves": null,
+      "direction_n": 0
+    },
+    "keyword_baseline": {
+      "n": 1,
+      "size_accuracy": 1.0,
+      "move_precision": null,
+      "move_recall": null,
+      "direction_accuracy_on_moves": null,
+      "direction_n": 0
+    },
+    "always_no_move": {
+      "n": 1,
+      "size_accuracy": 1.0,
+      "move_precision": null,
+      "move_recall": null,
+      "direction_accuracy_on_moves": null,
+      "direction_n": 0
+    }
+  },
+  "headlines_labelled": 1584,
+  "company_days_scored": 7
 }

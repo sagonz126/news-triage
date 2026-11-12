@@ -1,0 +1,8 @@
+id,ticker,company,day,title,seen_utc,labelled_utc,pre_close,llm_dir,llm_size,conf,kw_dir,kw_size,z,act_dir,act_size
+aece0fb60c08,ABBN.SW,ABB,2026-11-11,"ABB Robotics is supplying more than 1,700 robots for the production of a new generation of vehicles",2026-11-11T14:02:35Z,2026-11-11T19:04:04Z,False,up,notable,0.9,none,noise,1.0,up,notable
+c94f911093d6,NOVN.SW,Novartis,2026-11-11,Novartis (SWX:NOVN) Halts Pelacarsen After Trial Miss As Ianalumab Data Impresses,2026-11-11T14:15:22Z,2026-11-11T18:58:07Z,False,down,notable,0.8,down,notable,-0.97,none,noise
+d0a04e2288fe,CFR.SW,Richemont,2026-11-11,Richemont stock weighs De Beers role after Botswana backs consortium,2026-11-11T10:19:32Z,2026-11-11T12:22:26Z,True,none,notable,0.7,none,noise,-0.3,none,noise
+efd8d17f56da,NESN.SW,Nestle,2026-11-11,NESTLE Share Price Today - Nestle Pakistan Ltd,2026-11-11T04:26:56Z,2026-11-12T03:54:24Z,False,none,noise,0.9,none,noise,-1.18,down,notable
+6a7a0ec9a6b3,BBVA.MC,BBVA,2026-11-11,BBVA : Corporate Presentation 3Q26,2026-11-11T14:16:06Z,2026-11-11T19:04:17Z,False,none,noise,0.8,none,noise,-0.63,none,noise
+185721c5d60c,ITX.MC,Inditex,2026-11-11,Inditex backs $400m fund to help fashion suppliers cut carbon and waste,2026-11-11T12:14:53Z,2026-11-12T03:55:33Z,False,none,noise,0.8,down,notable,-0.71,none,noise
+21cda72acda6,UBSG.SW,UBS,2026-11-11,"UBS Group's Q3 two-way strategy in gold options: heavy bets on tech stocks, building a position in SK Hynix",2026-11-11T08:04:00Z,2026-11-11T19:03:55Z,False,none,noise,0.7,none,noise,0.66,none,noise
