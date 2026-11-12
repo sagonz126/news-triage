@@ -1,25 +1,25 @@
 {
-  "updated_utc": "2026-11-12T14:12:54Z",
+  "updated_utc": "2026-11-12T23:00:30Z",
   "start_date": "2026-11-11",
   "all": {
     "llm": {
-      "n": 35,
-      "size_accuracy": 0.543,
-      "move_precision": 0.263,
-      "move_recall": 0.714,
+      "n": 50,
+      "size_accuracy": 0.44,
+      "move_precision": 0.226,
+      "move_recall": 0.7,
       "direction_accuracy_on_moves": 1.0,
-      "direction_n": 5
+      "direction_n": 7
     },
     "keyword_baseline": {
-      "n": 35,
-      "size_accuracy": 0.657,
-      "move_precision": 0.3,
-      "move_recall": 0.429,
-      "direction_accuracy_on_moves": 0.667,
-      "direction_n": 3
+      "n": 50,
+      "size_accuracy": 0.68,
+      "move_precision": 0.357,
+      "move_recall": 0.5,
+      "direction_accuracy_on_moves": 0.8,
+      "direction_n": 5
     },
     "always_no_move": {
-      "n": 35,
+      "n": 50,
       "size_accuracy": 0.8,
       "move_precision": null,
       "move_recall": 0.0,
@@ -29,30 +29,30 @@
   },
   "pre_close": {
     "llm": {
-      "n": 21,
-      "size_accuracy": 0.524,
-      "move_precision": 0.231,
+      "n": 31,
+      "size_accuracy": 0.419,
+      "move_precision": 0.19,
       "move_recall": 1.0,
       "direction_accuracy_on_moves": 1.0,
-      "direction_n": 3
+      "direction_n": 4
     },
     "keyword_baseline": {
-      "n": 21,
-      "size_accuracy": 0.762,
-      "move_precision": 0.4,
-      "move_recall": 0.667,
-      "direction_accuracy_on_moves": 0.5,
-      "direction_n": 2
+      "n": 31,
+      "size_accuracy": 0.806,
+      "move_precision": 0.429,
+      "move_recall": 0.75,
+      "direction_accuracy_on_moves": 0.667,
+      "direction_n": 3
     },
     "always_no_move": {
-      "n": 21,
-      "size_accuracy": 0.857,
+      "n": 31,
+      "size_accuracy": 0.871,
       "move_precision": null,
       "move_recall": 0.0,
       "direction_accuracy_on_moves": null,
       "direction_n": 0
     }
   },
-  "headlines_labelled": 1809,
-  "company_days_scored": 35
+  "headlines_labelled": 2446,
+  "company_days_scored": 50
 }
