@@ -23,7 +23,7 @@ def main():
     tickers = [c["ticker"] for c in load_universe()]
     # One request per ticker: the bulk download often leaves out the latest close for
     # some exchanges (11 Nov 2026: missing for 33 of 42 series fifteen hours after the close).
-    series = {}
+    series, patched = {}, []
     for t in tickers + [MARKET, MARKET_FALLBACK]:
         try:
             h = yf.Ticker(t).history(period="2y", interval="1d", auto_adjust=True)
@@ -34,9 +34,26 @@ def main():
             print(f"  {t}: no data")
             continue
         idx = h.index.tz_localize(None) if h.index.tz is not None else h.index
-        series[t] = pd.Series(h["Close"].values, index=idx.normalize())
+        daily = pd.Series(h["Close"].values, index=idx.normalize())
+        # Yahoo can publish the daily bar a day or more late (11 Nov 2026: most European
+        # stocks still missing the next morning). Fill missing recent days with the last
+        # 30-minute bar of that day, which is normally the closing price.
+        try:
+            m = yf.Ticker(t).history(period="5d", interval="30m", auto_adjust=True)
+            if not m.empty:
+                local = m.index.tz_localize(None) if m.index.tz is None else m.index.tz_convert(m.index.tz).tz_localize(None)
+                last_bar = pd.Series(m["Close"].values, index=local).groupby(local.normalize()).last()
+                missing = last_bar[~last_bar.index.isin(daily.index)]
+                if len(missing):
+                    patched.append(f"{t}:{','.join(d.strftime('%m-%d') for d in missing.index)}")
+                    daily = pd.concat([daily, missing]).sort_index()
+        except Exception as e:
+            print(f"  {t} intraday: {e!r}")
+        series[t] = daily
         time.sleep(0.5)
     close = pd.DataFrame(series).sort_index()
+    if patched:
+        print("filled from intraday: " + " ".join(patched))
     # Drop today's row until every exchange has closed, so a live price is never used as a close
     from datetime import datetime, timezone
     now = datetime.now(timezone.utc)

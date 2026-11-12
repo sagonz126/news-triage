@@ -36,6 +36,7 @@ The prompt is in `prompts/label_v1.txt`. It is never edited: a change becomes `l
 
 - Headlines come from Google News RSS search and Yahoo Finance news, both free. GDELT was the first choice but rate-limits GitHub's servers. Publication times are the source's; the market often reacts before a story is indexed. This measures how well the model reads news, not a trading strategy.
 - Market-adjusted returns assume a beta of one.
+- Yahoo sometimes publishes daily closes a day late. A missing recent close is filled with the last 30-minute bar of that day, which can differ slightly from the official closing auction.
 - Search matching is noisy (Shell, SAP, ABB are common words, and Google returns lifestyle and option-chart pages too); the "relevant" field is there to filter, and its error rate is part of the result.
 
 ## Layout
