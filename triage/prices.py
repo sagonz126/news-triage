@@ -5,6 +5,8 @@ Abnormal return = stock return minus the STOXX Europe 600 return on the same day
 abnormal-return volatility over the previous 60 trading days, so a 2% move counts
 as big for Nestle and as noise for Rolls-Royce.
 """
+import time
+
 import pandas as pd
 import yfinance as yf
 
@@ -19,9 +21,22 @@ VOL_WINDOW = 60
 
 def main():
     tickers = [c["ticker"] for c in load_universe()]
-    raw = yf.download(tickers + [MARKET, MARKET_FALLBACK], period="2y", interval="1d", auto_adjust=True,
-                      progress=False, group_by="column", threads=True)
-    close = raw["Close"]
+    # One request per ticker: the bulk download often leaves out the latest close for
+    # some exchanges (11 Nov 2026: missing for 33 of 42 series fifteen hours after the close).
+    series = {}
+    for t in tickers + [MARKET, MARKET_FALLBACK]:
+        try:
+            h = yf.Ticker(t).history(period="2y", interval="1d", auto_adjust=True)
+        except Exception as e:
+            print(f"  {t}: {e!r}")
+            continue
+        if h.empty:
+            print(f"  {t}: no data")
+            continue
+        idx = h.index.tz_localize(None) if h.index.tz is not None else h.index
+        series[t] = pd.Series(h["Close"].values, index=idx.normalize())
+        time.sleep(0.5)
+    close = pd.DataFrame(series).sort_index()
     # Drop today's row until every exchange has closed, so a live price is never used as a close
     from datetime import datetime, timezone
     now = datetime.now(timezone.utc)
