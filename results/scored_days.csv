@@ -11,7 +11,8 @@ cba66a238670,OR.PA,L'Oreal,2026-11-11,L'Oréal : Sell rating from Deutsche Bank,
 73c3e6d7d403,DGE.L,Diageo,2026-11-11,"EXCLUSIVE: India holds Pernod, Diageo Scotch shipments as investigators seek higher tariff",2026-11-11T06:38:00Z,2026-11-11T12:27:15Z,True,down,notable,0.8,up,notable,-1.09,down,notable
 c94f911093d6,NOVN.SW,Novartis,2026-11-11,Novartis (SWX:NOVN) Halts Pelacarsen After Trial Miss As Ianalumab Data Impresses,2026-11-11T14:15:22Z,2026-11-11T18:58:07Z,False,down,notable,0.8,down,notable,-0.97,none,noise
 0c51b352307a,ASML.AS,ASML,2026-11-11,ASML Weighs Bigger 2028 Capacity Build as Record Quarter Backs the Case,2026-11-11T13:32:14Z,2026-11-12T03:54:15Z,False,up,notable,0.8,up,notable,1.03,up,notable
-0668a1556b4f,1913.HK,Prada,2026-11-12,"Prada Group Net Revenues Reach €4,541 Million in First Nine Months",2026-11-12T07:23:24Z,2026-11-12T22:50:54Z,False,up,notable,0.8,none,noise,-0.03,none,noise
+0668a1556b4f,1913.HK,Prada,2026-11-12,"Prada Group Net Revenues Reach €4,541 Million in First Nine Months",2026-11-12T07:23:24Z,2026-11-12T22:50:54Z,False,up,notable,0.8,none,noise,0.03,none,noise
+d85e57f98a19,CFR.SW,Richemont,2026-11-12,Prévisions Richemont: résultats attendus en hausse au premier semestre,2026-11-12T13:00:29Z,2026-11-12T22:58:54Z,False,up,notable,0.8,none,noise,-0.02,none,noise
 f16f19a88590,AZN.L,AstraZeneca,2026-11-11,AstraZeneca stock faces mixed FDA panel outcome on cancer drugs,2026-11-11T09:37:41Z,2026-11-11T12:11:48Z,True,down,notable,0.7,none,noise,-0.36,none,noise
 301729ee1436,SAN.MC,Banco Santander,2026-11-11,"Key facts: Santander target cut; Botín succession, chair powers may end",2026-11-11T06:00:00Z,2026-11-11T12:12:47Z,True,down,notable,0.7,down,notable,-0.23,none,noise
 29a2025987f6,IBE.MC,Iberdrola,2026-11-11,Iberdrola Readies A €6 Billion Grid Buildout In Spain,2026-11-11T06:58:38Z,2026-11-11T12:15:05Z,True,up,notable,0.7,none,noise,0.24,none,noise
@@ -30,6 +31,7 @@ b9668ce3f4e8,BRBY.L,Burberry,2026-11-11,Earnings To Watch: Burberry Group PLC (L
 e1d94781d1d7,SAP.DE,SAP,2026-11-11,SAP SE (SAP) Opens AI Retail Test Store With VF Corporation,2026-11-11T13:00:00Z,2026-11-12T03:56:09Z,False,none,noise,0.8,none,noise,-0.13,none,noise
 b27697bed808,SU.PA,Schneider Electric,2026-11-11,"Solar and batteries could cut electricity costs by 40%, Schneider Electric research finds",2026-11-11T13:25:41Z,2026-11-12T14:07:32Z,False,none,noise,0.8,down,notable,0.98,none,noise
 5bb24997e1f1,HM-B.ST,H&M,2026-11-11,Breaking: PETA Supporter Crashes H&M Speaker Over Wool Cruelty,2026-11-11T12:25:54Z,2026-11-12T22:54:26Z,False,none,noise,0.8,none,noise,-1.77,down,notable
+348bf905bbf5,UBSG.SW,UBS,2026-11-12,"UBS Group AG Surpasses 3% Voting Rights in Irish Residential Properties REIT plc (IRES, 0QT8)",2026-11-12T16:18:33Z,2026-11-12T22:57:35Z,False,none,noise,0.8,none,noise,-0.98,none,noise
 8f21eaa0c640,RO.SW,Roche,2026-11-11,Genentech at 50 and the making of modern biotech,2026-11-11T10:14:52Z,2026-11-11T12:10:46Z,True,none,noise,0.7,none,noise,-0.36,none,noise
 be8d052b34f4,TTE.PA,TotalEnergies,2026-11-11,"Consortia involving TotalEnergies, AG&P vie for $1.5 bln southern Vietnam LNG power plant",2026-11-11T09:21:29Z,2026-11-11T12:12:55Z,True,none,noise,0.7,none,noise,0.5,none,noise
 44ad77fbba2d,MC.PA,LVMH,2026-11-11,LVMH stock broadens AI rollout across six luxury sectors,2026-11-11T10:52:00Z,2026-11-11T12:22:26Z,True,none,noise,0.7,none,noise,-0.15,none,noise
