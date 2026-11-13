@@ -1,26 +1,26 @@
 {
-  "updated_utc": "2026-11-13T03:31:10Z",
+  "updated_utc": "2026-11-13T13:17:14Z",
   "start_date": "2026-11-11",
   "all": {
     "llm": {
-      "n": 39,
-      "size_accuracy": 0.513,
-      "move_precision": 0.238,
-      "move_recall": 0.625,
-      "direction_accuracy_on_moves": 1.0,
-      "direction_n": 5
+      "n": 75,
+      "size_accuracy": 0.48,
+      "move_precision": 0.227,
+      "move_recall": 0.769,
+      "direction_accuracy_on_moves": 0.8,
+      "direction_n": 10
     },
     "keyword_baseline": {
-      "n": 39,
-      "size_accuracy": 0.667,
-      "move_precision": 0.3,
-      "move_recall": 0.375,
-      "direction_accuracy_on_moves": 0.667,
-      "direction_n": 3
+      "n": 75,
+      "size_accuracy": 0.72,
+      "move_precision": 0.35,
+      "move_recall": 0.538,
+      "direction_accuracy_on_moves": 0.714,
+      "direction_n": 7
     },
     "always_no_move": {
-      "n": 39,
-      "size_accuracy": 0.795,
+      "n": 75,
+      "size_accuracy": 0.827,
       "move_precision": null,
       "move_recall": 0.0,
       "direction_accuracy_on_moves": null,
@@ -29,30 +29,30 @@
   },
   "pre_close": {
     "llm": {
-      "n": 21,
-      "size_accuracy": 0.524,
-      "move_precision": 0.231,
+      "n": 41,
+      "size_accuracy": 0.439,
+      "move_precision": 0.222,
       "move_recall": 1.0,
-      "direction_accuracy_on_moves": 1.0,
-      "direction_n": 3
+      "direction_accuracy_on_moves": 0.833,
+      "direction_n": 6
     },
     "keyword_baseline": {
-      "n": 21,
-      "size_accuracy": 0.762,
+      "n": 41,
+      "size_accuracy": 0.78,
       "move_precision": 0.4,
       "move_recall": 0.667,
-      "direction_accuracy_on_moves": 0.5,
-      "direction_n": 2
+      "direction_accuracy_on_moves": 0.75,
+      "direction_n": 4
     },
     "always_no_move": {
-      "n": 21,
-      "size_accuracy": 0.857,
+      "n": 41,
+      "size_accuracy": 0.854,
       "move_precision": null,
       "move_recall": 0.0,
       "direction_accuracy_on_moves": null,
       "direction_n": 0
     }
   },
-  "headlines_labelled": 2536,
-  "company_days_scored": 39
+  "headlines_labelled": 2870,
+  "company_days_scored": 75
 }
