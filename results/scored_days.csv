@@ -30,6 +30,9 @@ c75b48bcc89e,NOVO-B.CO,Novo Nordisk,2026-11-12,Eli Lilly beats Novo Nordisk to w
 0668a1556b4f,1913.HK,Prada,2026-11-12,"Prada Group Net Revenues Reach €4,541 Million in First Nine Months",2026-11-12T07:23:24Z,2026-11-12T22:50:54Z,False,up,notable,0.8,none,noise,0.03,none,noise
 b14d728e5fad,IBE.MC,Iberdrola,2026-11-12,AlphaValue/Baader Europe Downgrades Iberdrola to Reduce,2026-11-12T13:48:49Z,2026-11-12T22:57:53Z,False,down,notable,0.8,down,notable,0.58,none,noise
 d85e57f98a19,CFR.SW,Richemont,2026-11-12,Prévisions Richemont: résultats attendus en hausse au premier semestre,2026-11-12T13:00:29Z,2026-11-12T22:58:54Z,False,up,notable,0.8,none,noise,-0.02,none,noise
+88c09992436f,NOVN.SW,Novartis,2026-11-13,FDA Investigates Cancer Risk in Novartis Gene Therapy(1),2026-11-13T00:42:27Z,2026-11-13T03:30:05Z,True,down,notable,0.8,none,noise,-0.07,none,noise
+9194f705f6e3,RO.SW,Roche,2026-11-13,Roche Receives Positive EU Committee Recommendation for Gazyva/Gazyvaro in Systemic Lupus Erythematosus,2026-11-13T13:53:07Z,2026-11-13T22:44:16Z,False,up,notable,0.8,none,noise,-0.71,none,noise
+ae0a16661796,ABBN.SW,ABB,2026-11-13,ABB: Robotics disposal gain lifted 9M profit and EPS well above continuing-operations results,2026-11-13T12:26:18Z,2026-11-13T22:46:57Z,False,up,notable,0.8,none,noise,-0.38,none,noise
 9f0c16772f23,MC.PA,LVMH,2026-11-12,LVMH | Asian clients desert Louis Vuitton's French stores,2026-11-12T06:51:39Z,2026-11-12T22:50:37Z,False,down,notable,0.75,none,noise,0.2,none,noise
 f16f19a88590,AZN.L,AstraZeneca,2026-11-11,AstraZeneca stock faces mixed FDA panel outcome on cancer drugs,2026-11-11T09:37:41Z,2026-11-11T12:11:48Z,True,down,notable,0.7,none,noise,-0.36,none,noise
 301729ee1436,SAN.MC,Banco Santander,2026-11-11,"Key facts: Santander target cut; Botín succession, chair powers may end",2026-11-11T06:00:00Z,2026-11-11T12:12:47Z,True,down,notable,0.7,down,notable,-0.23,none,noise
@@ -60,6 +63,7 @@ b27697bed808,SU.PA,Schneider Electric,2026-11-11,"Solar and batteries could cut 
 5bb24997e1f1,HM-B.ST,H&M,2026-11-11,Breaking: PETA Supporter Crashes H&M Speaker Over Wool Cruelty,2026-11-11T12:25:54Z,2026-11-12T22:54:26Z,False,none,noise,0.8,none,noise,-1.77,down,notable
 f0b43541e6f6,HM-B.ST,H&M,2026-11-12,Paarl’s where it’s at for H&M’s newest store,2026-11-12T03:32:52Z,2026-11-12T22:54:26Z,False,none,noise,0.8,none,noise,0.27,none,noise
 348bf905bbf5,UBSG.SW,UBS,2026-11-12,"UBS Group AG Surpasses 3% Voting Rights in Irish Residential Properties REIT plc (IRES, 0QT8)",2026-11-12T16:18:33Z,2026-11-12T22:57:35Z,False,none,noise,0.8,none,noise,-0.98,none,noise
+50e4e6fedbc8,UBSG.SW,UBS,2026-11-13,UBS Group AG Becomes Substantial Holder in National Australia Bank with 6.63% Voting Power,2026-11-13T07:28:23Z,2026-11-13T13:15:06Z,True,none,noise,0.8,none,noise,-0.53,none,noise
 8f21eaa0c640,RO.SW,Roche,2026-11-11,Genentech at 50 and the making of modern biotech,2026-11-11T10:14:52Z,2026-11-11T12:10:46Z,True,none,noise,0.7,none,noise,-0.36,none,noise
 be8d052b34f4,TTE.PA,TotalEnergies,2026-11-11,"Consortia involving TotalEnergies, AG&P vie for $1.5 bln southern Vietnam LNG power plant",2026-11-11T09:21:29Z,2026-11-11T12:12:55Z,True,none,noise,0.7,none,noise,0.5,none,noise
 44ad77fbba2d,MC.PA,LVMH,2026-11-11,LVMH stock broadens AI rollout across six luxury sectors,2026-11-11T10:52:00Z,2026-11-11T12:22:26Z,True,none,noise,0.7,none,noise,-0.15,none,noise
@@ -72,5 +76,6 @@ e39b779ebdc5,SU.PA,Schneider Electric,2026-11-12,Genesis & Schneider to modernis
 11a19b3b331b,KER.PA,Kering,2026-11-12,Kering stock faces a Balenciaga reset as Martine Rose starts,2026-11-11T16:37:23Z,2026-11-12T03:55:33Z,True,none,noise,0.6,none,noise,-0.06,none,noise
 0e3be82a846a,BBVA.MC,BBVA,2026-11-12,Moves – BBVA hires Thomas Moore for securitized products team,2026-11-11T18:33:17Z,2026-11-12T03:56:26Z,True,none,noise,0.6,none,noise,-0.38,none,noise
 313414c7d081,SAP.DE,SAP,2026-11-12,SAP Puts Product-Level Cloud Emissions and Energy Data in Customers’ Hands,2026-11-12T13:22:12Z,2026-11-12T14:07:32Z,True,none,noise,0.6,none,noise,0.34,none,noise
+858a4ef73eea,NESN.SW,Nestle,2026-11-13,Nestle stock: SimplyCook sale adds to portfolio reshaping,2026-11-12T16:52:01Z,2026-11-12T22:55:25Z,True,up,noise,0.6,none,noise,1.17,up,notable
 3fc7396acc9f,RMS.PA,Hermes,2026-11-12,Hermès International stock faces China drag as leather goods hold up,2026-11-11T17:22:29Z,2026-11-12T22:50:46Z,False,down,noise,0.5,none,noise,-0.14,none,noise
 f72d4ba3ea1d,MONC.MI,Moncler,2026-11-12,Moncler’s Fifth Avenue Store Signals Luxury’s US Push,2026-11-11T17:06:59Z,2026-11-12T22:50:54Z,False,up,noise,0.5,none,noise,-0.3,none,noise

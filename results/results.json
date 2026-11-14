@@ -1,26 +1,26 @@
 {
-  "updated_utc": "2026-11-14T01:47:48Z",
+  "updated_utc": "2026-11-14T03:26:35Z",
   "start_date": "2026-11-11",
   "all": {
     "llm": {
-      "n": 75,
-      "size_accuracy": 0.48,
-      "move_precision": 0.227,
-      "move_recall": 0.769,
-      "direction_accuracy_on_moves": 0.8,
-      "direction_n": 10
+      "n": 80,
+      "size_accuracy": 0.463,
+      "move_precision": 0.213,
+      "move_recall": 0.714,
+      "direction_accuracy_on_moves": 0.818,
+      "direction_n": 11
     },
     "keyword_baseline": {
-      "n": 75,
-      "size_accuracy": 0.72,
+      "n": 80,
+      "size_accuracy": 0.725,
       "move_precision": 0.35,
-      "move_recall": 0.538,
+      "move_recall": 0.5,
       "direction_accuracy_on_moves": 0.714,
       "direction_n": 7
     },
     "always_no_move": {
-      "n": 75,
-      "size_accuracy": 0.827,
+      "n": 80,
+      "size_accuracy": 0.825,
       "move_precision": null,
       "move_recall": 0.0,
       "direction_accuracy_on_moves": null,
@@ -29,30 +29,30 @@
   },
   "pre_close": {
     "llm": {
-      "n": 41,
-      "size_accuracy": 0.439,
-      "move_precision": 0.222,
-      "move_recall": 1.0,
-      "direction_accuracy_on_moves": 0.833,
-      "direction_n": 6
+      "n": 44,
+      "size_accuracy": 0.432,
+      "move_precision": 0.214,
+      "move_recall": 0.857,
+      "direction_accuracy_on_moves": 0.857,
+      "direction_n": 7
     },
     "keyword_baseline": {
-      "n": 41,
-      "size_accuracy": 0.78,
+      "n": 44,
+      "size_accuracy": 0.773,
       "move_precision": 0.4,
-      "move_recall": 0.667,
+      "move_recall": 0.571,
       "direction_accuracy_on_moves": 0.75,
       "direction_n": 4
     },
     "always_no_move": {
-      "n": 41,
-      "size_accuracy": 0.854,
+      "n": 44,
+      "size_accuracy": 0.841,
       "move_precision": null,
       "move_recall": 0.0,
       "direction_accuracy_on_moves": null,
       "direction_n": 0
     }
   },
-  "headlines_labelled": 3259,
-  "company_days_scored": 75
+  "headlines_labelled": 3349,
+  "company_days_scored": 80
 }
