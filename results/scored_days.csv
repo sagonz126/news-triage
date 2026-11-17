@@ -4,6 +4,7 @@ id,ticker,company,day,title,seen_utc,labelled_utc,pre_close,llm_dir,llm_size,con
 609c2a2704fd,SIE.DE,Siemens,2026-11-12,"Siemens Q4 Profit Beats Forecasts, Ups Mid-Term Guidance on AI Demand",2026-11-12T06:11:15Z,2026-11-12T13:58:45Z,True,up,big,0.95,up,notable,1.18,up,notable
 ebe5ca6f6213,BRBY.L,Burberry,2026-11-12,Another profit beat keeps Burberry turnaround on track,2026-11-12T08:24:00Z,2026-11-12T22:51:03Z,False,up,big,0.95,up,notable,5.1,up,big
 8ad07b1a5243,SIE.DE,Siemens,2026-11-13,Siemens beats earnings estimates and raises med...,2026-11-12T22:27:40Z,2026-11-12T22:55:33Z,True,up,big,0.95,up,notable,-0.63,none,noise
+c23a358d92bf,CFR.SW,Richemont,2026-11-16,Richemont profit jumps 39% despite weaker second-quarter momentum,2026-11-15T09:00:00Z,2026-11-15T12:51:39Z,True,up,big,0.95,none,notable,1.93,up,notable
 bbc61956950a,BATS.L,British American Tobacco,2026-11-11,Key facts: British American Tobacco Forecasts 5%-8% EPS Growth; Plans $1.3 Billion Buyback; JPMorgan Reinstates Overweight Rating,2026-11-11T08:00:00Z,2026-11-11T12:22:17Z,True,up,big,0.9,up,notable,-0.4,none,noise
 b65007115644,ENR.DE,Siemens Energy,2026-11-12,"Siemens Energy Reports Record Year, Sets New 2030 Targets",2026-11-11T17:22:34Z,2026-11-11T19:04:17Z,True,up,big,0.9,up,notable,-0.1,none,noise
 bbdf765bef17,RR.L,Rolls-Royce,2026-11-12,Rolls-Royce unveils £1.5bn buyback as strong order book underpins FY outlook,2026-11-12T09:00:56Z,2026-11-12T22:50:01Z,False,up,big,0.9,up,notable,0.96,none,noise
@@ -17,6 +18,7 @@ bbdf765bef17,RR.L,Rolls-Royce,2026-11-12,Rolls-Royce unveils £1.5bn buyback as 
 aece0fb60c08,ABBN.SW,ABB,2026-11-11,"ABB Robotics is supplying more than 1,700 robots for the production of a new generation of vehicles",2026-11-11T14:02:35Z,2026-11-11T19:04:04Z,False,up,notable,0.9,none,noise,1.0,up,notable
 e881a705fd04,ABBN.SW,ABB,2026-11-12,"BMW orders more than 1,700 ABB robots for next-generation vehicle production",2026-11-11T18:27:09Z,2026-11-11T19:04:04Z,True,up,notable,0.9,none,noise,-0.3,none,noise
 a4f06a52cbde,UCG.MI,UniCredit,2026-11-11,UniCredit stock: Profit rises 24% as Commerzbank control nears,2026-11-11T10:10:19Z,2026-11-12T03:54:07Z,False,up,notable,0.9,none,noise,0.07,none,noise
+e074db40610a,RO.SW,Roche,2026-11-16,Roche’s Gazyva adds 3rd immune indication with first FDA nod for primary membranous nephropathy,2026-11-16T16:00:00Z,2026-11-17T01:00:41Z,False,up,notable,0.9,none,noise,0.62,none,noise
 f4db7601a71c,DGE.L,Diageo,2026-11-12,Scotch whisky impounded by India in tariff dispute,2026-11-11T17:24:11Z,2026-11-12T03:55:33Z,True,down,notable,0.85,none,noise,0.68,none,noise
 bce37dc28064,SAN.MC,Banco Santander,2026-11-12,Banco Santander Boosts Exchange Offer Ratio by 5% to 0.4260 for Santander Brasil Minority Shares,2026-11-12T11:22:31Z,2026-11-12T22:55:33Z,False,up,notable,0.85,up,notable,-1.24,down,notable
 8fb2de1c97eb,SAN.MC,Banco Santander,2026-11-13,Banco Santander (SAN) Enhances Offer Terms for Santander Brasil Shareholders,2026-11-12T17:08:49Z,2026-11-12T22:55:33Z,True,up,notable,0.85,none,noise,0.03,none,noise
@@ -87,7 +89,8 @@ f0b43541e6f6,HM-B.ST,H&M,2026-11-12,Paarl’s where it’s at for H&M’s newest
 9688ab5de081,HM-B.ST,H&M,2026-11-13,H&M Move Introduces A Complete Layering System for Winter Running,2026-11-12T18:46:20Z,2026-11-12T22:59:42Z,True,none,noise,0.8,none,noise,1.08,up,notable
 50e4e6fedbc8,UBSG.SW,UBS,2026-11-13,UBS Group AG Becomes Substantial Holder in National Australia Bank with 6.63% Voting Power,2026-11-13T07:28:23Z,2026-11-13T13:15:06Z,True,none,noise,0.8,none,noise,-0.53,none,noise
 a713eea6e402,CPR.MI,Campari,2026-11-13,Campari Group appoints Sijesh Janardhan for India & Subcontinent GTR,2026-11-13T05:09:31Z,2026-11-13T22:47:58Z,False,none,noise,0.8,none,noise,0.31,none,noise
-a436ef1c19fa,1913.HK,Prada,2026-11-16,Alix & Ashtin Earle Rock Miu Miu Micro Shorts for V Magazine Cover,2026-11-14T12:42:22Z,2026-11-14T21:38:13Z,True,none,noise,0.8,none,noise,-0.75,none,noise
+a436ef1c19fa,1913.HK,Prada,2026-11-16,Alix & Ashtin Earle Rock Miu Miu Micro Shorts for V Magazine Cover,2026-11-14T12:42:22Z,2026-11-14T21:38:13Z,True,none,noise,0.8,none,noise,-0.71,none,noise
+6f04de549bc8,NESN.SW,Nestle,2026-11-16,Cocoa knowhow for Ranau farmers,2026-11-15T14:18:17Z,2026-11-15T21:54:54Z,True,none,noise,0.8,none,noise,0.65,none,noise
 8f21eaa0c640,RO.SW,Roche,2026-11-11,Genentech at 50 and the making of modern biotech,2026-11-11T10:14:52Z,2026-11-11T12:10:46Z,True,none,noise,0.7,none,noise,-0.36,none,noise
 be8d052b34f4,TTE.PA,TotalEnergies,2026-11-11,"Consortia involving TotalEnergies, AG&P vie for $1.5 bln southern Vietnam LNG power plant",2026-11-11T09:21:29Z,2026-11-11T12:12:55Z,True,none,noise,0.7,none,noise,0.5,none,noise
 44ad77fbba2d,MC.PA,LVMH,2026-11-11,LVMH stock broadens AI rollout across six luxury sectors,2026-11-11T10:52:00Z,2026-11-11T12:22:26Z,True,none,noise,0.7,none,noise,-0.15,none,noise
@@ -98,6 +101,7 @@ e39b779ebdc5,SU.PA,Schneider Electric,2026-11-12,Genesis & Schneider to modernis
 e3545a52be87,OR.PA,L'Oreal,2026-11-13,Is L'Oréal (ENXTPA:OR) Fully Valued As AI Summit Attention Turns To Its Premium Price?,2026-11-12T19:09:18Z,2026-11-12T22:58:54Z,True,none,noise,0.7,none,noise,0.66,none,noise
 2c8d3e92e5b0,RO.SW,Roche,2026-11-12,ZEAL: Clinical advances and Roche milestones drove DKK 4.5bn 9M revenue and strengthened cash to DKK 13.5bn,2026-11-12T14:57:45Z,2026-11-13T13:14:38Z,False,none,noise,0.7,none,noise,0.71,none,noise
 9577efd625a7,ABI.BR,AB InBev,2026-11-13,AB InBev invests again in Cutwater production,2026-11-13T11:48:37Z,2026-11-13T13:16:28Z,True,none,noise,0.7,none,noise,0.37,none,noise
+5ac31909f0f4,NOVN.SW,Novartis,2026-11-16,Novartis receives positive CHMP opinion for Cosentyx® in adolescents aged 12+ with hidradenitis suppurativa (HS),2026-11-13T18:30:00Z,2026-11-13T22:46:03Z,True,up,noise,0.7,none,noise,0.74,none,noise
 5695d6fe9b45,SAF.PA,Safran,2026-11-11,Safran launches FleetLife predictive maintenance service for aircraft,2026-11-11T08:22:05Z,2026-11-11T12:15:53Z,True,up,noise,0.6,none,noise,-0.44,none,noise
 11a19b3b331b,KER.PA,Kering,2026-11-12,Kering stock faces a Balenciaga reset as Martine Rose starts,2026-11-11T16:37:23Z,2026-11-12T03:55:33Z,True,none,noise,0.6,none,noise,-0.06,none,noise
 0e3be82a846a,BBVA.MC,BBVA,2026-11-12,Moves – BBVA hires Thomas Moore for securitized products team,2026-11-11T18:33:17Z,2026-11-12T03:56:26Z,True,none,noise,0.6,none,noise,-0.38,none,noise
