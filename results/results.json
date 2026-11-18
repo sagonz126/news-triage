@@ -1,26 +1,26 @@
 {
-  "updated_utc": "2026-11-18T03:09:20Z",
+  "updated_utc": "2026-11-18T14:33:06Z",
   "start_date": "2026-11-11",
   "all": {
     "llm": {
-      "n": 154,
-      "size_accuracy": 0.461,
-      "move_precision": 0.221,
-      "move_recall": 0.679,
+      "n": 182,
+      "size_accuracy": 0.467,
+      "move_precision": 0.204,
+      "move_recall": 0.625,
       "direction_accuracy_on_moves": 0.667,
       "direction_n": 21
     },
     "keyword_baseline": {
-      "n": 154,
-      "size_accuracy": 0.688,
-      "move_precision": 0.311,
-      "move_recall": 0.5,
-      "direction_accuracy_on_moves": 0.538,
-      "direction_n": 13
+      "n": 182,
+      "size_accuracy": 0.665,
+      "move_precision": 0.268,
+      "move_recall": 0.469,
+      "direction_accuracy_on_moves": 0.5,
+      "direction_n": 14
     },
     "always_no_move": {
-      "n": 154,
-      "size_accuracy": 0.818,
+      "n": 182,
+      "size_accuracy": 0.824,
       "move_precision": null,
       "move_recall": 0.0,
       "direction_accuracy_on_moves": null,
@@ -29,24 +29,24 @@
   },
   "pre_close": {
     "llm": {
-      "n": 98,
-      "size_accuracy": 0.439,
-      "move_precision": 0.214,
-      "move_recall": 0.706,
+      "n": 119,
+      "size_accuracy": 0.454,
+      "move_precision": 0.2,
+      "move_recall": 0.65,
       "direction_accuracy_on_moves": 0.714,
       "direction_n": 14
     },
     "keyword_baseline": {
-      "n": 98,
-      "size_accuracy": 0.714,
-      "move_precision": 0.321,
-      "move_recall": 0.529,
+      "n": 119,
+      "size_accuracy": 0.681,
+      "move_precision": 0.257,
+      "move_recall": 0.45,
       "direction_accuracy_on_moves": 0.625,
       "direction_n": 8
     },
     "always_no_move": {
-      "n": 98,
-      "size_accuracy": 0.827,
+      "n": 119,
+      "size_accuracy": 0.832,
       "move_precision": null,
       "move_recall": 0.0,
       "direction_accuracy_on_moves": null,
@@ -54,5 +54,5 @@
     }
   },
   "headlines_labelled": 5320,
-  "company_days_scored": 154
+  "company_days_scored": 182
 }
