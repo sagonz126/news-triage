@@ -1,26 +1,26 @@
 {
-  "updated_utc": "2026-11-18T23:37:57Z",
+  "updated_utc": "2026-11-19T02:49:46Z",
   "start_date": "2026-11-11",
   "all": {
     "llm": {
-      "n": 197,
-      "size_accuracy": 0.452,
-      "move_precision": 0.198,
-      "move_recall": 0.647,
-      "direction_accuracy_on_moves": 0.682,
-      "direction_n": 22
+      "n": 194,
+      "size_accuracy": 0.464,
+      "move_precision": 0.211,
+      "move_recall": 0.676,
+      "direction_accuracy_on_moves": 0.696,
+      "direction_n": 23
     },
     "keyword_baseline": {
-      "n": 197,
+      "n": 194,
       "size_accuracy": 0.68,
-      "move_precision": 0.283,
+      "move_precision": 0.288,
       "move_recall": 0.5,
       "direction_accuracy_on_moves": 0.5,
       "direction_n": 16
     },
     "always_no_move": {
-      "n": 197,
-      "size_accuracy": 0.827,
+      "n": 194,
+      "size_accuracy": 0.825,
       "move_precision": null,
       "move_recall": 0.0,
       "direction_accuracy_on_moves": null,
@@ -54,5 +54,5 @@
     }
   },
   "headlines_labelled": 6526,
-  "company_days_scored": 197
+  "company_days_scored": 194
 }
