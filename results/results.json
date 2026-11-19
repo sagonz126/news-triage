@@ -1,26 +1,26 @@
 {
-  "updated_utc": "2026-11-19T02:49:46Z",
+  "updated_utc": "2026-11-19T14:53:37Z",
   "start_date": "2026-11-11",
   "all": {
     "llm": {
-      "n": 194,
-      "size_accuracy": 0.464,
-      "move_precision": 0.211,
-      "move_recall": 0.676,
-      "direction_accuracy_on_moves": 0.696,
-      "direction_n": 23
+      "n": 226,
+      "size_accuracy": 0.451,
+      "move_precision": 0.189,
+      "move_recall": 0.632,
+      "direction_accuracy_on_moves": 0.708,
+      "direction_n": 24
     },
     "keyword_baseline": {
-      "n": 194,
-      "size_accuracy": 0.68,
-      "move_precision": 0.288,
-      "move_recall": 0.5,
-      "direction_accuracy_on_moves": 0.5,
-      "direction_n": 16
+      "n": 226,
+      "size_accuracy": 0.673,
+      "move_precision": 0.261,
+      "move_recall": 0.474,
+      "direction_accuracy_on_moves": 0.529,
+      "direction_n": 17
     },
     "always_no_move": {
-      "n": 194,
-      "size_accuracy": 0.825,
+      "n": 226,
+      "size_accuracy": 0.832,
       "move_precision": null,
       "move_recall": 0.0,
       "direction_accuracy_on_moves": null,
@@ -53,6 +53,6 @@
       "direction_n": 0
     }
   },
-  "headlines_labelled": 6526,
-  "company_days_scored": 194
+  "headlines_labelled": 6726,
+  "company_days_scored": 226
 }
