@@ -46,6 +46,7 @@ bce37dc28064,SAN.MC,Banco Santander,2026-11-12,Banco Santander Boosts Exchange O
 96eaefb314f2,AZN.L,AstraZeneca,2026-11-17,AstraZeneca secures FDA and EU approvals for Klygefa: Can AZN hold recent gains?,2026-11-17T08:01:47Z,2026-11-18T23:29:25Z,False,up,notable,0.85,none,noise,0.06,none,noise
 7d5dcc6f50f3,AZN.L,AstraZeneca,2026-11-18,Mohit Manrao: FDA Approves AstraZeneca's VOLGA Trial Regimen for Muscle-Invasive Bladder Cancer,2026-11-17T18:20:06Z,2026-11-18T23:29:25Z,False,up,notable,0.85,none,noise,-0.06,none,noise
 75cd2ef12e45,CFR.SW,Richemont,2026-11-18,Richemont stock: First-half profit rises as sales growth broadens,2026-11-17T16:56:24Z,2026-11-18T23:31:13Z,False,up,notable,0.85,none,noise,1.58,up,notable
+42e143848215,DGE.L,Diageo,2026-11-19,India imposes 162.5% duty and tax on bulk Scotch imports amid UK trade pact dispute,2026-11-18T17:16:22Z,2026-11-18T23:37:06Z,True,down,notable,0.85,none,noise,-0.6,none,noise
 a0317c9baa00,SIE.DE,Siemens,2026-11-11,Siemens buys Lauterbach,2026-11-11T06:11:15Z,2026-11-11T12:12:28Z,True,up,notable,0.8,none,noise,0.99,none,noise
 427fa22ea613,NOVO-B.CO,Novo Nordisk,2026-11-11,Novo Nordisk stock faces FDA warning over rare vision risk,2026-11-11T11:07:35Z,2026-11-11T12:14:47Z,True,down,notable,0.8,down,notable,-0.14,none,noise
 e88f98168e3d,AIR.PA,Airbus,2026-11-11,"Cathay Pacific orders 11 more Airbus A330neos, raising total to 41",2026-11-11T08:12:47Z,2026-11-11T12:21:26Z,True,up,notable,0.8,none,noise,0.41,none,noise
@@ -98,6 +99,10 @@ d4cdbdc5d835,DGE.L,Diageo,2026-11-18,Diageo stock: TD Cowen names it a 2027 Best
 3ed4cb6a718a,ABI.BR,AB InBev,2026-11-18,Wolfe Research Initiates Anheuser-Busch Inbev(BUD.US) With Buy Rating,2026-11-18T00:39:05Z,2026-11-18T23:35:22Z,False,up,notable,0.8,none,noise,0.16,none,noise
 4f2e0a8ef097,ASML.AS,ASML,2026-11-18,AlphaValue/Baader Europe Upgrades ASML to Add Rating,2026-11-18T13:41:34Z,2026-11-18T23:35:22Z,False,up,notable,0.8,up,notable,1.2,up,notable
 62e24db48e1c,SIE.DE,Siemens,2026-11-18,Siemens Gamesa bags major new offshore wind turbine order,2026-11-18T13:18:40Z,2026-11-18T23:35:48Z,False,up,notable,0.8,none,noise,-0.28,none,noise
+76091c8fb33a,AZN.L,AstraZeneca,2026-11-19,AstraZeneca cancer drug Sone-Ve granted priority review by US FDA,2026-11-19T11:21:00Z,2026-11-19T14:35:45Z,True,up,notable,0.8,none,noise,-1.02,down,notable
+f2dcea7bcf45,RR.L,Rolls-Royce,2026-11-19,Rolls-Royce welcomes Royal Brunei Airlines order for eight Trent 1000 XE engines,2026-11-19T14:03:47Z,2026-11-19T23:42:20Z,False,up,notable,0.8,none,noise,0.24,none,noise
+fc8481381785,BATS.L,British American Tobacco,2026-11-19,British American Tobacco loses Hungary concession: BATS support comes under pressure,2026-11-19T08:41:45Z,2026-11-19T23:44:45Z,False,down,notable,0.8,none,noise,-1.08,down,notable
+16d1577aa084,BRBY.L,Burberry,2026-11-19,Burberry reports first-half growth and improved profitability,2026-11-19T14:28:05Z,2026-11-19T23:45:03Z,False,up,notable,0.8,none,noise,0.97,none,noise
 9f0c16772f23,MC.PA,LVMH,2026-11-12,LVMH | Asian clients desert Louis Vuitton's French stores,2026-11-12T06:51:39Z,2026-11-12T22:50:37Z,False,down,notable,0.75,none,noise,0.2,none,noise
 f16f19a88590,AZN.L,AstraZeneca,2026-11-11,AstraZeneca stock faces mixed FDA panel outcome on cancer drugs,2026-11-11T09:37:41Z,2026-11-11T12:11:48Z,True,down,notable,0.7,none,noise,-0.36,none,noise
 301729ee1436,SAN.MC,Banco Santander,2026-11-11,"Key facts: Santander target cut; Botín succession, chair powers may end",2026-11-11T06:00:00Z,2026-11-11T12:12:47Z,True,down,notable,0.7,down,notable,-0.23,none,noise
@@ -149,6 +154,7 @@ a57a1bcf49d7,HSBA.L,HSBC,2026-11-18,"HSBC Bought Back 10,000 Shares For HK$1.4 M
 1300a72aab7e,NESN.SW,Nestle,2026-11-18,Gingerbread crowned the UK’s #1 non-negotiable traditional festive flavour as Nescafé marks 10-Year Return of fan-favourite with London pop-up,2026-11-18T10:22:31Z,2026-11-18T23:32:00Z,False,none,noise,0.9,none,noise,0.2,none,noise
 2f23c54982d1,TTE.PA,TotalEnergies,2026-11-18,TotalEnergies Publishes a New Edition of Its Human Rights Briefing Paper,2026-11-18T10:45:43Z,2026-11-18T23:32:53Z,False,none,noise,0.9,none,noise,-1.05,down,notable
 e53832d7eaee,ALV.DE,Allianz,2026-11-18,Allianz Hong Kong Equity AT SGD (0P0000KWS7.SI) Seasonal returns chart,2026-11-18T06:15:16Z,2026-11-18T23:36:05Z,False,none,noise,0.9,none,noise,-0.02,none,noise
+d6b5badebdf2,HSBA.L,HSBC,2026-11-19,HSBC builds wealth advisory capabilities through global learning academy,2026-11-19T05:49:25Z,2026-11-19T14:34:53Z,True,none,noise,0.9,none,noise,-0.1,none,noise
 15a5cf6fd3b6,CPR.MI,Campari,2026-11-11,Campari stock keeps outlook as aperitifs lift nine-month sales,2026-11-11T01:48:00Z,2026-11-11T12:27:33Z,True,none,noise,0.8,none,noise,-0.33,none,noise
 6a7a0ec9a6b3,BBVA.MC,BBVA,2026-11-11,BBVA : Corporate Presentation 3Q26,2026-11-11T14:16:06Z,2026-11-11T19:04:17Z,False,none,noise,0.8,none,noise,-0.63,none,noise
 185721c5d60c,ITX.MC,Inditex,2026-11-11,Inditex backs $400m fund to help fashion suppliers cut carbon and waste,2026-11-11T12:14:53Z,2026-11-12T03:55:33Z,False,none,noise,0.8,down,notable,-0.71,none,noise
@@ -182,6 +188,10 @@ e0673cf9329c,ITX.MC,Inditex,2026-11-17,Zara Owner Inditex Backs New $250 Million
 121ec035419d,CPR.MI,Campari,2026-11-18,Campari Group takes first football steps with Euro 2028 partnership for Aperol brand,2026-11-17T20:52:10Z,2026-11-18T23:31:25Z,False,none,noise,0.8,none,noise,-0.11,none,noise
 77d41d25fb3b,CPR.MI,Campari,2026-11-17,Campari group’s Aperol to spritz up UEFA Euro 2028 partner portfolio,2026-11-17T16:20:04Z,2026-11-18T23:31:25Z,False,none,noise,0.8,none,noise,-0.04,none,noise
 f59ec1483db2,SAF.PA,Safran,2026-11-18,Bengaluru: Safran India CEO Meets Karnataka CM #Gallery,2026-11-18T08:08:21Z,2026-11-18T23:34:20Z,False,none,noise,0.8,none,noise,0.28,none,noise
+56c7b3b72de1,ULVR.L,Unilever,2026-11-19,Hindustan Unilever GM hands over aid to IDPs,2026-11-18T19:40:57Z,2026-11-18T23:36:49Z,True,none,noise,0.8,none,noise,-1.12,down,notable
+22ef6ebb6f34,1913.HK,Prada,2026-11-19,Miu Miu SS27: A Fluid Wardrobe for the Here and Now,2026-11-18T09:44:00Z,2026-11-18T23:37:06Z,True,none,noise,0.8,none,noise,1.49,up,notable
+9d1955b14be8,SHEL.L,Shell,2026-11-19,Shell’s Former Battery Business Leaves Australian Customers Facing Support Uncertainty — As Sonnen Creditors Prepare to Meet,2026-11-19T13:50:31Z,2026-11-19T23:41:49Z,False,none,noise,0.8,none,noise,0.13,none,noise
+ced2dfc3ad46,HM-B.ST,H&M,2026-11-18,Sweden's H&M enters Malta with first store in Sliema,2026-11-18T11:35:52Z,2026-11-19T23:45:11Z,False,none,noise,0.8,none,noise,0.99,none,noise
 8f21eaa0c640,RO.SW,Roche,2026-11-11,Genentech at 50 and the making of modern biotech,2026-11-11T10:14:52Z,2026-11-11T12:10:46Z,True,none,noise,0.7,none,noise,-0.36,none,noise
 be8d052b34f4,TTE.PA,TotalEnergies,2026-11-11,"Consortia involving TotalEnergies, AG&P vie for $1.5 bln southern Vietnam LNG power plant",2026-11-11T09:21:29Z,2026-11-11T12:12:55Z,True,none,noise,0.7,none,noise,0.5,none,noise
 44ad77fbba2d,MC.PA,LVMH,2026-11-11,LVMH stock broadens AI rollout across six luxury sectors,2026-11-11T10:52:00Z,2026-11-11T12:22:26Z,True,none,noise,0.7,none,noise,-0.15,none,noise
@@ -217,7 +227,6 @@ b52391be312f,RR.L,Rolls-Royce,2026-11-17,Is the Outlook Shifting for Rolls Royce
 00f98b89efdd,BATS.L,British American Tobacco,2026-11-17,British American Tobacco completes share buyback and cancellation: Can BATS sustain recent stability?,2026-11-17T08:42:28Z,2026-11-18T00:13:46Z,False,none,noise,0.6,up,notable,-1.45,down,notable
 d32b49d549d4,NESN.SW,Nestle,2026-11-17,Nestle Brazil coffee supplier faces hearing over labor abuse claims,2026-11-16T16:34:16Z,2026-11-18T23:28:15Z,False,down,noise,0.6,none,noise,0.15,none,noise
 599a66a8f939,SU.PA,Schneider Electric,2026-11-17,Schneider Electric SE : Bernstein reiterates its Buy rating,2026-11-17T14:39:32Z,2026-11-18T23:29:43Z,False,up,noise,0.6,none,noise,-0.13,none,noise
-9c290f4538a1,HM-B.ST,H&M,2026-11-18,PETA stages Birmingham protest urging H&M to ditch wool after farm abuse footage,2026-11-17T18:00:00Z,2026-11-18T23:31:25Z,False,none,noise,0.6,none,noise,0.99,none,noise
 3fc7396acc9f,RMS.PA,Hermes,2026-11-12,Hermès International stock faces China drag as leather goods hold up,2026-11-11T17:22:29Z,2026-11-12T22:50:46Z,False,down,noise,0.5,none,noise,-0.14,none,noise
 f72d4ba3ea1d,MONC.MI,Moncler,2026-11-12,Moncler’s Fifth Avenue Store Signals Luxury’s US Push,2026-11-11T17:06:59Z,2026-11-12T22:50:54Z,False,up,noise,0.5,none,noise,-0.3,none,noise
 4e4d29e62230,RMS.PA,Hermes,2026-11-13,The Missing Hermès Shares and LVMH’s Hidden Stake,2026-11-12T23:44:42Z,2026-11-13T03:30:23Z,True,none,noise,0.5,none,noise,-0.53,none,noise
