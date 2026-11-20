@@ -1,26 +1,26 @@
 {
-  "updated_utc": "2026-11-20T14:19:33Z",
+  "updated_utc": "2026-11-20T23:14:00Z",
   "start_date": "2026-11-11",
   "all": {
     "llm": {
-      "n": 265,
-      "size_accuracy": 0.457,
-      "move_precision": 0.193,
-      "move_recall": 0.583,
-      "direction_accuracy_on_moves": 0.724,
-      "direction_n": 29
+      "n": 273,
+      "size_accuracy": 0.458,
+      "move_precision": 0.215,
+      "move_recall": 0.571,
+      "direction_accuracy_on_moves": 0.667,
+      "direction_n": 33
     },
     "keyword_baseline": {
-      "n": 265,
-      "size_accuracy": 0.672,
+      "n": 273,
+      "size_accuracy": 0.652,
       "move_precision": 0.257,
-      "move_recall": 0.396,
+      "move_recall": 0.339,
       "direction_accuracy_on_moves": 0.5,
       "direction_n": 18
     },
     "always_no_move": {
-      "n": 265,
-      "size_accuracy": 0.819,
+      "n": 273,
+      "size_accuracy": 0.795,
       "move_precision": null,
       "move_recall": 0.0,
       "direction_accuracy_on_moves": null,
@@ -29,30 +29,30 @@
   },
   "pre_close": {
     "llm": {
-      "n": 125,
-      "size_accuracy": 0.448,
-      "move_precision": 0.217,
-      "move_recall": 0.625,
-      "direction_accuracy_on_moves": 0.688,
-      "direction_n": 16
+      "n": 133,
+      "size_accuracy": 0.451,
+      "move_precision": 0.26,
+      "move_recall": 0.594,
+      "direction_accuracy_on_moves": 0.6,
+      "direction_n": 20
     },
     "keyword_baseline": {
-      "n": 125,
-      "size_accuracy": 0.68,
+      "n": 133,
+      "size_accuracy": 0.639,
       "move_precision": 0.286,
-      "move_recall": 0.417,
+      "move_recall": 0.312,
       "direction_accuracy_on_moves": 0.556,
       "direction_n": 9
     },
     "always_no_move": {
-      "n": 125,
-      "size_accuracy": 0.808,
+      "n": 133,
+      "size_accuracy": 0.759,
       "move_precision": null,
       "move_recall": 0.0,
       "direction_accuracy_on_moves": null,
       "direction_n": 0
     }
   },
-  "headlines_labelled": 7816,
-  "company_days_scored": 265
+  "headlines_labelled": 8144,
+  "company_days_scored": 273
 }
