@@ -1,26 +1,26 @@
 {
-  "updated_utc": "2026-11-19T23:49:26Z",
+  "updated_utc": "2026-11-20T02:37:01Z",
   "start_date": "2026-11-11",
   "all": {
     "llm": {
-      "n": 235,
-      "size_accuracy": 0.451,
-      "move_precision": 0.197,
-      "move_recall": 0.619,
-      "direction_accuracy_on_moves": 0.692,
-      "direction_n": 26
+      "n": 230,
+      "size_accuracy": 0.457,
+      "move_precision": 0.195,
+      "move_recall": 0.625,
+      "direction_accuracy_on_moves": 0.68,
+      "direction_n": 25
     },
     "keyword_baseline": {
-      "n": 235,
-      "size_accuracy": 0.668,
-      "move_precision": 0.261,
-      "move_recall": 0.429,
-      "direction_accuracy_on_moves": 0.529,
-      "direction_n": 17
+      "n": 230,
+      "size_accuracy": 0.674,
+      "move_precision": 0.271,
+      "move_recall": 0.475,
+      "direction_accuracy_on_moves": 0.5,
+      "direction_n": 18
     },
     "always_no_move": {
-      "n": 235,
-      "size_accuracy": 0.821,
+      "n": 230,
+      "size_accuracy": 0.826,
       "move_precision": null,
       "move_recall": 0.0,
       "direction_accuracy_on_moves": null,
@@ -29,24 +29,24 @@
   },
   "pre_close": {
     "llm": {
-      "n": 114,
-      "size_accuracy": 0.439,
-      "move_precision": 0.219,
-      "move_recall": 0.636,
+      "n": 112,
+      "size_accuracy": 0.446,
+      "move_precision": 0.222,
+      "move_recall": 0.667,
       "direction_accuracy_on_moves": 0.667,
       "direction_n": 15
     },
     "keyword_baseline": {
-      "n": 114,
-      "size_accuracy": 0.667,
-      "move_precision": 0.273,
-      "move_recall": 0.409,
-      "direction_accuracy_on_moves": 0.625,
-      "direction_n": 8
+      "n": 112,
+      "size_accuracy": 0.679,
+      "move_precision": 0.294,
+      "move_recall": 0.476,
+      "direction_accuracy_on_moves": 0.556,
+      "direction_n": 9
     },
     "always_no_move": {
-      "n": 114,
-      "size_accuracy": 0.807,
+      "n": 112,
+      "size_accuracy": 0.812,
       "move_precision": null,
       "move_recall": 0.0,
       "direction_accuracy_on_moves": null,
@@ -54,5 +54,5 @@
     }
   },
   "headlines_labelled": 7436,
-  "company_days_scored": 235
+  "company_days_scored": 230
 }
