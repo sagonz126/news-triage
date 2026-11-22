@@ -1,5 +1,5 @@
 {
-  "updated_utc": "2026-11-22T03:18:44Z",
+  "updated_utc": "2026-11-22T13:33:37Z",
   "start_date": "2026-11-11",
   "all": {
     "llm": {
@@ -53,6 +53,6 @@
       "direction_n": 0
     }
   },
-  "headlines_labelled": 8570,
+  "headlines_labelled": 8732,
   "company_days_scored": 300
 }
