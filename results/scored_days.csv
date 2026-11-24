@@ -28,6 +28,7 @@ ccb671ce66b5,ENR.DE,Siemens Energy,2026-11-19,Siemens Energy Hands Shareholders 
 de6bcf664e55,UCG.MI,UniCredit,2026-11-19,UniCredit agrees deal with Berlin on Commerzbank takeover,2026-11-19T08:02:52Z,2026-11-19T23:44:10Z,False,up,big,0.9,none,noise,0.72,none,noise
 43e8a2c09b35,UCG.MI,UniCredit,2026-11-20,"Germany, UniCredit reach agreement on Commerzbank takeover | Daily Sabah",2026-11-19T16:30:00Z,2026-11-19T23:47:21Z,True,up,big,0.9,none,noise,-0.36,none,noise
 7381d5881d2f,NOVN.SW,Novartis,2026-11-20,Novartis Cuts Sales Growth Target Through 2031 to 5% as Patent Expirations and Trial Failures Weigh,2026-11-20T05:05:00Z,2026-11-20T14:09:12Z,True,down,big,0.9,down,notable,1.14,up,notable
+d9be10efca1d,CFR.SW,Richemont,2026-11-23,Richemont stock: First-half profit rises 39 percent,2026-11-21T10:57:08Z,2026-11-21T13:36:19Z,True,up,big,0.9,none,noise,0.86,none,noise
 d462e852c289,ENR.DE,Siemens Energy,2026-11-17,Siemens Energy Sets Sights on €5 Billion Net Profit as Hydrogen Test and Record Backlog Back the 2,2026-11-17T10:51:40Z,2026-11-18T23:30:30Z,False,up,big,0.85,up,notable,-0.41,none,noise
 f715c17467ef,ULVR.L,Unilever,2026-11-17,"Unilever raises volume growth outlook, targets margin expansion amid planned McCormick deal",2026-11-17T15:44:21Z,2026-11-18T23:30:58Z,False,up,big,0.85,up,notable,-0.06,none,noise
 688352b91a45,ASML.AS,ASML,2026-11-13,ASML Lifts 2026 Revenue Guidance as Union Standoff and Buyback Run in Parallel,2026-11-13T14:01:52Z,2026-11-13T22:44:08Z,False,up,big,0.8,up,notable,-1.16,down,notable
@@ -239,6 +240,7 @@ f4b0ba24896f,SU.PA,Schneider Electric,2026-11-20,"DCD>Talks: Cooling for the AI 
 a17390693e9e,RI.PA,Pernod Ricard,2026-11-20,Mira M. Yang Ensemble Exhibition at the Pernod Ricard Foundation,2026-11-19T16:57:46Z,2026-11-20T14:18:36Z,True,none,noise,0.8,none,noise,1.39,up,notable
 ad2d5af9fed2,ALV.DE,Allianz,2026-11-20,Schroders Greencoat backs Finnish e-methane plant with Allianz,2026-11-20T13:50:15Z,2026-11-20T23:11:24Z,False,none,noise,0.8,none,noise,0.73,none,noise
 3e043dcdc321,MC.PA,LVMH,2026-11-20,LVMH exits Armani stake talks as L’Oréal emerges as frontrunner.,2026-11-20T16:27:48Z,2026-11-20T23:12:57Z,False,none,noise,0.8,none,noise,-0.46,none,noise
+88b4d2f59551,1913.HK,Prada,2026-11-23,"Miu Miu 'Correspondence' Collaborates with Pettinaroli, a Family-owned Stationary Store since 1881",2026-11-21T21:55:28Z,2026-11-22T03:17:55Z,True,none,noise,0.8,none,noise,-1.62,down,notable
 8f21eaa0c640,RO.SW,Roche,2026-11-11,Genentech at 50 and the making of modern biotech,2026-11-11T10:14:52Z,2026-11-11T12:10:46Z,True,none,noise,0.7,none,noise,-0.36,none,noise
 be8d052b34f4,TTE.PA,TotalEnergies,2026-11-11,"Consortia involving TotalEnergies, AG&P vie for $1.5 bln southern Vietnam LNG power plant",2026-11-11T09:21:29Z,2026-11-11T12:12:55Z,True,none,noise,0.7,none,noise,0.5,none,noise
 44ad77fbba2d,MC.PA,LVMH,2026-11-11,LVMH stock broadens AI rollout across six luxury sectors,2026-11-11T10:52:00Z,2026-11-11T12:22:26Z,True,none,noise,0.7,none,noise,-0.15,none,noise
@@ -287,6 +289,8 @@ d32b49d549d4,NESN.SW,Nestle,2026-11-17,Nestle Brazil coffee supplier faces heari
 a75a802bc640,SAN.MC,Banco Santander,2026-11-20,Banco Santander stock retains UBS Buy rating from analyst,2026-11-20T09:02:14Z,2026-11-20T14:09:29Z,True,up,noise,0.6,none,noise,-0.16,none,noise
 9f86b2a5154d,BBVA.MC,BBVA,2026-11-20,Jefferies reiterates BBVA as its preferred bank in Spain and considers Unicaja overvalued,2026-11-20T10:16:25Z,2026-11-20T14:17:09Z,True,up,noise,0.6,none,noise,-1.11,down,notable
 4c6281f28047,CFR.SW,Richemont,2026-11-19,COMPAGNIE FINANCIERE RICHEMONT : Buy rating from Jefferies,2026-11-19T08:59:21Z,2026-11-20T14:18:20Z,False,up,noise,0.6,none,noise,1.17,up,notable
+f0c95a9f307a,NESN.SW,Nestle,2026-11-23,Google Nears Nestle Deal To Automate Factory Lines,2026-11-20T19:03:20Z,2026-11-20T23:11:15Z,True,up,noise,0.6,none,noise,-2.2,down,big
+aa8b8cbdeddf,RO.SW,Roche,2026-11-23,Roche to continue legal battles with Russia’s R-Pharm for patent rights on pertuzumab,2026-11-23T11:16:00Z,2026-11-24T03:24:46Z,False,none,noise,0.6,none,noise,-1.0,down,notable
 3fc7396acc9f,RMS.PA,Hermes,2026-11-12,Hermès International stock faces China drag as leather goods hold up,2026-11-11T17:22:29Z,2026-11-12T22:50:46Z,False,down,noise,0.5,none,noise,-0.14,none,noise
 f72d4ba3ea1d,MONC.MI,Moncler,2026-11-12,Moncler’s Fifth Avenue Store Signals Luxury’s US Push,2026-11-11T17:06:59Z,2026-11-12T22:50:54Z,False,up,noise,0.5,none,noise,-0.3,none,noise
 4e4d29e62230,RMS.PA,Hermes,2026-11-13,The Missing Hermès Shares and LVMH’s Hidden Stake,2026-11-12T23:44:42Z,2026-11-13T03:30:23Z,True,none,noise,0.5,none,noise,-0.53,none,noise
