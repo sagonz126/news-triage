@@ -33,6 +33,7 @@ d9be10efca1d,CFR.SW,Richemont,2026-11-23,Richemont stock: First-half profit rise
 f426c6eb1e4a,BRBY.L,Burberry,2026-11-23,Burberry Sales Rise 6% to £1.1 Billion,2026-11-21T12:50:17Z,2026-11-21T13:36:19Z,True,up,big,0.9,none,noise,0.05,none,noise
 6366cb657efc,ABBN.SW,ABB,2026-11-23,ABB Ltd signed an agreement to acquire ZIEHL-ABEGG SE from family for $2.2 billion.,2026-11-23T14:26:59Z,2026-11-24T03:26:01Z,False,up,big,0.9,none,noise,1.54,up,notable
 2c0c84a578a0,ENR.DE,Siemens Energy,2026-11-23,Siemens Energy Lifts Dividend and Plots €9 Billion Buyback as Hydrogen-Fired Turbine Passes First,2026-11-23T13:41:11Z,2026-11-24T03:26:10Z,False,up,big,0.9,up,notable,1.54,up,notable
+eb3370e851a1,RO.SW,Roche,2026-11-25,Roche's breast cancer drug gets two USFDA approvals in a week; sales potential at $14 billion - CNBC TV18,2026-11-25T08:07:25Z,2026-11-26T01:04:18Z,False,up,big,0.9,none,noise,0.59,none,noise
 d462e852c289,ENR.DE,Siemens Energy,2026-11-17,Siemens Energy Sets Sights on €5 Billion Net Profit as Hydrogen Test and Record Backlog Back the 2,2026-11-17T10:51:40Z,2026-11-18T23:30:30Z,False,up,big,0.85,up,notable,-0.41,none,noise
 f715c17467ef,ULVR.L,Unilever,2026-11-17,"Unilever raises volume growth outlook, targets margin expansion amid planned McCormick deal",2026-11-17T15:44:21Z,2026-11-18T23:30:58Z,False,up,big,0.85,up,notable,-0.06,none,noise
 688352b91a45,ASML.AS,ASML,2026-11-13,ASML Lifts 2026 Revenue Guidance as Union Standoff and Buyback Run in Parallel,2026-11-13T14:01:52Z,2026-11-13T22:44:08Z,False,up,big,0.8,up,notable,-1.16,down,notable
@@ -148,6 +149,7 @@ a0ff6c5dd96f,ABBN.SW,ABB,2026-11-24,ABB to Acquire Ziehl-Abegg - Expanding Offer
 650bee5914d7,BBVA.MC,BBVA,2026-11-24,"Spain extends bank tax, sets tougher lending rules before election",2026-11-24T14:07:43Z,2026-11-25T01:33:38Z,False,down,notable,0.8,none,noise,-1.47,down,notable
 eeebd42de92d,AIR.PA,Airbus,2026-11-24,Airbus to Sell US Space Business to Investment Firm Cerberus,2026-11-24T14:50:42Z,2026-11-25T01:33:56Z,False,up,notable,0.8,none,noise,-0.36,none,noise
 4f02271b8af5,SHEL.L,Shell,2026-11-24,Shell stock: Kepler Cheuvreux raised target to EUR 45,2026-11-24T16:29:59Z,2026-11-25T01:36:35Z,False,up,notable,0.8,up,notable,0.15,none,noise
+a66b2c4f98d7,UBSG.SW,UBS,2026-11-25,Swiss parliamentary committee backs 90% capital requirement for UBS foreign subsidiaries,2026-11-24T17:08:05Z,2026-11-25T01:36:52Z,True,down,notable,0.8,none,noise,-0.25,none,noise
 05277909596e,BATS.L,British American Tobacco,2026-11-24,"British American Tobacco stock: BAT tempers outlook, plans GBP 1.3bn return",2026-11-24T16:04:24Z,2026-11-25T01:38:53Z,False,down,notable,0.8,none,noise,1.46,up,notable
 9f0c16772f23,MC.PA,LVMH,2026-11-12,LVMH | Asian clients desert Louis Vuitton's French stores,2026-11-12T06:51:39Z,2026-11-12T22:50:37Z,False,down,notable,0.75,none,noise,0.2,none,noise
 d6e2d2a64dd2,RO.SW,Roche,2026-11-19,Biocon gets EU nod for breast cancer blockbuster Perjeta biosimilar,2026-11-19T15:19:08Z,2026-11-20T14:09:12Z,False,down,notable,0.75,none,noise,0.18,none,noise
@@ -297,6 +299,9 @@ be5c648317e8,ALV.DE,Allianz,2026-11-23,Allianz ratings affirmed by Fitch as capi
 f3cb978c954e,RCO.PA,Remy Cointreau,2026-11-24,Johnson Bros. Expands Rémy Cointreau Partnership to Indiana,2026-11-23T17:48:18Z,2026-11-24T03:29:40Z,True,none,noise,0.8,none,noise,1.35,up,notable
 efe74e46a8c1,SAP.DE,SAP,2026-11-24,SAP SE (SAP) Repurchased 1.94M Shares During Nov. 16–20,2026-11-24T12:32:21Z,2026-11-25T01:33:12Z,False,up,noise,0.8,none,noise,1.54,up,notable
 a7d11b6cc843,IBE.MC,Iberdrola,2026-11-24,"Iberdrola, S.A. : Bernstein remains Neutral",2026-11-24T07:38:53Z,2026-11-25T01:33:38Z,False,none,noise,0.8,none,noise,0.82,none,noise
+1efa7dcbc08c,NOVN.SW,Novartis,2026-11-25,Novartis stock: RBC Capital keeps Hold rating,2026-11-24T17:00:45Z,2026-11-25T01:36:26Z,True,none,noise,0.8,none,noise,0.34,none,noise
+fecab9ebffbb,NESN.SW,Nestle,2026-11-25,Nestlé Business Model Analysis,2026-11-25T13:26:04Z,2026-11-26T01:05:11Z,False,none,noise,0.8,none,noise,1.64,up,notable
+342757f5ff73,CFR.SW,Richemont,2026-11-25,"Roger Dubuis opens new boutique in Bangkok, Thailand",2026-11-25T15:53:09Z,2026-11-26T01:10:11Z,False,none,noise,0.8,none,noise,-0.67,none,noise
 8f21eaa0c640,RO.SW,Roche,2026-11-11,Genentech at 50 and the making of modern biotech,2026-11-11T10:14:52Z,2026-11-11T12:10:46Z,True,none,noise,0.7,none,noise,-0.36,none,noise
 be8d052b34f4,TTE.PA,TotalEnergies,2026-11-11,"Consortia involving TotalEnergies, AG&P vie for $1.5 bln southern Vietnam LNG power plant",2026-11-11T09:21:29Z,2026-11-11T12:12:55Z,True,none,noise,0.7,none,noise,0.5,none,noise
 44ad77fbba2d,MC.PA,LVMH,2026-11-11,LVMH stock broadens AI rollout across six luxury sectors,2026-11-11T10:52:00Z,2026-11-11T12:22:26Z,True,none,noise,0.7,none,noise,-0.15,none,noise
@@ -360,6 +365,7 @@ b7fa1c2d86cb,1913.HK,Prada,2026-11-24,EXCLUSIVE: Miu Miu Taps Becky Armstrong as
 4c5dfee54cac,SAF.PA,Safran,2026-11-24,Scandium Canada Announces That Safran Landing Systems Is Putting Its Alloy Subsidiary's Scalium(R) Plates to the Test,2026-11-24T13:03:00Z,2026-11-25T01:33:47Z,False,none,noise,0.6,none,noise,-0.26,none,noise
 c9bb649279c8,KER.PA,Kering,2026-11-24,Gucci is struggling in China.,2026-11-24T02:24:16Z,2026-11-25T01:34:31Z,False,down,noise,0.6,none,noise,0.61,none,noise
 520edc175b20,NESN.SW,Nestle,2026-11-24,Nestlé turns to AI and robotics to stoke growth,2026-11-24T15:00:00Z,2026-11-25T01:36:35Z,False,none,noise,0.6,none,noise,1.88,up,notable
+2931d977bd89,ABBN.SW,ABB,2026-11-25,ABB Helps Scale Industrial AI with World’s First Motor Featuring Built-in Intelligence,2026-11-24T17:24:29Z,2026-11-25T01:37:56Z,True,up,noise,0.6,none,noise,-1.13,down,notable
 3fc7396acc9f,RMS.PA,Hermes,2026-11-12,Hermès International stock faces China drag as leather goods hold up,2026-11-11T17:22:29Z,2026-11-12T22:50:46Z,False,down,noise,0.5,none,noise,-0.14,none,noise
 f72d4ba3ea1d,MONC.MI,Moncler,2026-11-12,Moncler’s Fifth Avenue Store Signals Luxury’s US Push,2026-11-11T17:06:59Z,2026-11-12T22:50:54Z,False,up,noise,0.5,none,noise,-0.3,none,noise
 4e4d29e62230,RMS.PA,Hermes,2026-11-13,The Missing Hermès Shares and LVMH’s Hidden Stake,2026-11-12T23:44:42Z,2026-11-13T03:30:23Z,True,none,noise,0.5,none,noise,-0.53,none,noise
@@ -373,4 +379,4 @@ e7c5db118b82,KER.PA,Kering,2026-11-20,BALENCIAGA Korea Finance Director,2026-11-
 f2c97d509e6c,BRBY.L,Burberry,2026-11-24,Why Is Burberry (LSE:BRBY) Back In Favour This Week After Interim Results Showed Profit More Than Tripling?,2026-11-24T10:32:00Z,2026-11-25T01:35:12Z,False,none,noise,0.5,none,noise,1.04,up,notable
 8d4e1170e884,SAF.PA,Safran,2026-11-19,Rafale Source Code Stays in France: Partnership or Assembly?,2026-11-19T15:00:00Z,2026-11-19T23:47:21Z,False,none,noise,0.4,none,noise,-0.12,none,noise
 51b3e5413368,SAF.PA,Safran,2026-11-20,"Safran’s Naval Decoy Launcher NGDS HK Now Kills Too, 88 Guided 70mm Rockets Added Alongside Chaff, Flares",2026-11-19T18:08:21Z,2026-11-19T23:47:21Z,True,none,noise,0.4,none,noise,-0.45,none,noise
-59c049b6a12b,1913.HK,Prada,2026-11-25,Thai Star Becky Armstrong Enters Miu Miu’s Fashion Circle As Brand Ambassador,2026-11-24T09:44:38Z,2026-11-25T01:35:12Z,True,up,noise,0.3,none,noise,0.84,none,noise
+59c049b6a12b,1913.HK,Prada,2026-11-25,Thai Star Becky Armstrong Enters Miu Miu’s Fashion Circle As Brand Ambassador,2026-11-24T09:44:38Z,2026-11-25T01:35:12Z,True,up,noise,0.3,none,noise,0.93,none,noise
