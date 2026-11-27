@@ -1,26 +1,26 @@
 {
-  "updated_utc": "2026-11-26T15:34:53Z",
+  "updated_utc": "2026-11-27T01:08:00Z",
   "start_date": "2026-11-11",
   "all": {
     "llm": {
-      "n": 412,
-      "size_accuracy": 0.454,
+      "n": 413,
+      "size_accuracy": 0.455,
       "move_precision": 0.309,
       "move_recall": 0.548,
       "direction_accuracy_on_moves": 0.564,
       "direction_n": 78
     },
     "keyword_baseline": {
-      "n": 412,
-      "size_accuracy": 0.607,
+      "n": 413,
+      "size_accuracy": 0.608,
       "move_precision": 0.35,
       "move_recall": 0.286,
       "direction_accuracy_on_moves": 0.5,
       "direction_n": 34
     },
     "always_no_move": {
-      "n": 412,
-      "size_accuracy": 0.694,
+      "n": 413,
+      "size_accuracy": 0.695,
       "move_precision": null,
       "move_recall": 0.0,
       "direction_accuracy_on_moves": null,
@@ -29,30 +29,30 @@
   },
   "pre_close": {
     "llm": {
-      "n": 208,
-      "size_accuracy": 0.438,
+      "n": 209,
+      "size_accuracy": 0.44,
       "move_precision": 0.339,
       "move_recall": 0.528,
       "direction_accuracy_on_moves": 0.511,
       "direction_n": 45
     },
     "keyword_baseline": {
-      "n": 208,
-      "size_accuracy": 0.601,
+      "n": 209,
+      "size_accuracy": 0.603,
       "move_precision": 0.426,
       "move_recall": 0.319,
       "direction_accuracy_on_moves": 0.545,
       "direction_n": 22
     },
     "always_no_move": {
-      "n": 208,
-      "size_accuracy": 0.654,
+      "n": 209,
+      "size_accuracy": 0.656,
       "move_precision": null,
       "move_recall": 0.0,
       "direction_accuracy_on_moves": null,
       "direction_n": 0
     }
   },
-  "headlines_labelled": 12457,
-  "company_days_scored": 412
+  "headlines_labelled": 12775,
+  "company_days_scored": 413
 }
